@@ -1,0 +1,115 @@
+@import "fonts.css";
+*, html, body {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+header .header-wrap-left-side {
+  width: 70%;
+  height: 140px;
+}
+header .header-wrap-left-side .header-logo {
+  width: 140px;
+  height: 140px;
+  background: dodgerblue;
+}
+header .header-wrap-left-side .header-navigation {
+  width: 87%;
+}
+header .header-wrap-left-side .header-navigation nav {
+  height: 100%;
+}
+header .header-wrap-left-side .header-navigation nav ul {
+  display: flex;
+  height: 100%;
+  margin-bottom: 0;
+}
+header .header-wrap-left-side .header-navigation nav ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  border: 0.5px solid #d5d5d5;
+  border-right: none;
+  text-transform: uppercase;
+  position: relative;
+  transition: 0.4s ease;
+  font-size: 14px;
+}
+header .header-wrap-left-side .header-navigation nav ul li span {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: #cdcdcd;
+  transition: 0.4s ease;
+}
+header .header-wrap-left-side .header-navigation nav ul li:hover {
+  background: #343434;
+  color: #fff;
+  cursor: pointer;
+}
+header .header-wrap-left-side .header-navigation nav ul li:hover span {
+  color: #fff;
+}
+header .header-wrap-right-side {
+  width: 30%;
+  height: 140px;
+  border-left: 0.5px solid #d5d5d5;
+  border-bottom: 0.5px solid #d5d5d5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-left: 60px;
+}
+header .header-wrap-right-side .header-lang .change-lang span {
+  color: #cdcdcd;
+  transition: 0.3s ease;
+}
+header .header-wrap-right-side .header-lang .change-lang span:first-child {
+  margin-right: 10px;
+}
+header .header-wrap-right-side .header-lang .change-lang .active-lang {
+  color: black;
+}
+header .header-wrap-right-side .header-lang .change-lang:hover {
+  cursor: pointer;
+}
+header .header-wrap-right-side .header-btn-order a {
+  font-size: 13px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  background: #0b4682;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 5px 25px -5px #39B6FF;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+header .header-wrap-right-side .header-btn-order a:hover {
+  background: #0e559e;
+}
+
+.main-content-wrap aside {
+  width: 140px;
+  height: 1000px;
+  border-right: 0.5px solid #d5d5d5;
+}
+.main-content-wrap .main-content {
+  padding: 60px;
+  height: 500px;
+  width: 100%;
+  background: #000;
+}
+
+section .hero-wrap .col-md7 {
+  padding: 60px;
+  background: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
