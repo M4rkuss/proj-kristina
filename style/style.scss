@@ -9,6 +9,9 @@ $main-text: #ebebeb;
   box-sizing: border-box;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, p, span {
   font-weight: 300;
 }
 
@@ -25,23 +28,32 @@ a {
   padding: 0;
 }
 
+.container-fluid {
+  padding: 0 !important;
+}
+
 header {
   .header-wrap-left-side {
     width: 70%;
     height: 140px;
+
     .header-logo {
       width: 14%;
       height: 140px;
       background: dodgerblue;
     }
+
     .header-navigation {
       width: 87%;
+
       nav {
         height: 100%;
+
         ul {
           display: flex;
           height: 100%;
           margin-bottom: 0;
+
           li {
             display: flex;
             justify-content: center;
@@ -54,6 +66,7 @@ header {
             position: relative;
             transition: .4s ease;
             font-size: 14px;
+
             span {
               position: absolute;
               bottom: 10px;
@@ -61,10 +74,12 @@ header {
               color: #cdcdcd;
               transition: .4s ease;
             }
+
             &:hover {
               background: #343434;
               color: #fff;
               cursor: pointer;
+
               span {
                 color: #fff;
               }
@@ -74,6 +89,7 @@ header {
       }
     }
   }
+
   .header-wrap-right-side {
     width: 30%;
     height: 140px;
@@ -83,23 +99,28 @@ header {
     justify-content: space-around;
     align-items: center;
     padding-left: 60px;
+
     .header-lang {
       .change-lang {
         span {
           color: #cdcdcd;
           transition: .3s ease;
+
           &:first-child {
             margin-right: 10px;
           }
         }
+
         .active-lang {
           color: black;
         }
+
         &:hover {
           cursor: pointer;
         }
       }
     }
+
     .header-btn-order {
       a {
         font-size: 13px;
@@ -109,6 +130,7 @@ header {
         border-radius: 30px;
         box-shadow: 0 5px 25px -5px #39B6FF;
         transition: .3s ease;
+
         &:hover {
           background: #0e559e;
         }
@@ -120,9 +142,10 @@ header {
 .main-content-wrap {
   aside {
     width: 10.7%;
-    height: 1000px;
+    height: 1500px;
     border-right: 0.5px solid #d5d5d5;;
   }
+
   .main-content {
     //padding: 60px;
     height: 500px;
@@ -132,17 +155,22 @@ header {
 
 section .hero-wrap {
   border-bottom: 0.5px solid #d5d5d5;
+
   .col-md-7 {
     background: #fff;
     padding-bottom: 40px;
+
     .hero-head {
       padding: 60px 0 0 60px;
+
       h1 {
         font-weight: 300;
       }
-      p{
+
+      p {
         padding: 5px 0 10px;
       }
+
       a {
         font-size: 13px;
         padding: 10px 30px;
@@ -150,22 +178,27 @@ section .hero-wrap {
         background: #0b4682;
         border-radius: 30px;
         transition: .3s ease;
+
         &:hover {
           cursor: pointer;
           background: #0e559e;
         }
       }
     }
+
     .hero-footer {
       padding: 60px 0 0 60px;
       margin-top: 100px;
       border-top: 0.5px solid #d5d5d5;
     }
   }
+
   .col-md-5 {
     border-left: 0.5px solid #d5d5d5;
+
     .carousel {
       height: 100%;
+
       .carousel-control-prev {
         span {
           &:first-child {
@@ -176,16 +209,20 @@ section .hero-wrap {
           }
         }
       }
+
       .carousel-inner {
         height: 100%;
+
         .carousel-item {
           height: 100%;
+
           img {
             height: 100%;
           }
         }
       }
     }
+
     &:before {
       content: '';
       position: absolute;
@@ -206,17 +243,78 @@ section .hero-wrap {
 .polygraphy-in-kiev {
   padding: 50px;
   background: #F5F7FC;
+
   .col-md-5 {
     span {
       color: #0e559e;
     }
   }
+
   .col-md-7 {
-    .col-md-4 p{
+    .col-md-4 p {
       &:first-child {
         font-size: 60px;
         font-weight: 400;
         color: #0b4682;
+      }
+    }
+  }
+}
+
+.portfolio {
+  background: #F5F7FC;
+
+  .portfolio-leftside {
+    padding: 100px 30px 80px 50px;
+
+    h2 {
+      font-size: 40px;
+      margin-bottom: 100px;
+    }
+
+    h3 {
+      font-size: 35px;
+    }
+
+    p {
+      width: 60%;
+    }
+    .portfolio-leftside-footer {
+      span {
+        color: #0e559e;
+      }
+      .portfolio-slider-arrow-left {
+        margin-right: 20px;
+      }
+      svg {
+        fill: #d5d5d5;
+        transition: .3s ease;
+        &:hover {
+          fill: #0e559e;
+          cursor: pointer;
+        }
+      }
+      path {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  .portfolio-rightside {
+    background-color: #0e559e;
+    width: 100%;
+    padding: 90px 30px 90px 50px;
+    h3 {
+      color: #fff;
+      font-size: 35px;
+    }
+    .arrow-more {
+      img {
+        width: 60px;
+      }
+      p {
+        text-transform: uppercase;
+        color: #fff;
       }
     }
   }

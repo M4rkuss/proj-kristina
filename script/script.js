@@ -10,3 +10,25 @@ function changeLang () {
 }
 
 changeLang()
+
+$(document).ready (() => {
+  $('.portfolio-slider').slick({
+    arrows: true,
+    dots: false,
+    accessibility: false,
+    prevArrow: '#portfolioArrowLeft',
+    nextArrow: '#portfolioArrowRight',
+    customPaging: function (slider, i) {
+      console.log(slider);
+      return  (i + 1) + '/' + slider.slideCount;
+    }
+  })
+  var $status = $('#sliderCounter');
+  var $slickElement = $('.portfolio-slider');
+
+  $slickElement.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+    //currentSlide is undefined on init -- set it to 0 in this case (currentSlide is 0 based)
+    var i = (currentSlide ? currentSlide : 0) + 1;
+    $status.text('0' + i + ' / 0' + slick.slideCount);
+  });
+})
