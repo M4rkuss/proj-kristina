@@ -20,6 +20,10 @@ a {
   text-decoration: none !important;
 }
 
+.container {
+  max-width: 1300px !important;
+}
+
 .row {
   margin: 0;
 }
@@ -33,6 +37,9 @@ a {
 }
 
 header {
+  position: sticky;
+  top: 0;
+  z-index: 999;
   .header-wrap-left-side {
     width: 70%;
     height: 140px;
@@ -61,6 +68,7 @@ header {
             width: 20%;
             height: 100%;
             border: 0.5px solid #d5d5d5;
+            background: #fff;
             border-right: none;
             text-transform: uppercase;
             position: relative;
@@ -95,6 +103,7 @@ header {
     height: 140px;
     border-left: 0.5px solid #d5d5d5;
     border-bottom: 0.5px solid #d5d5d5;
+    background: #fff;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -147,102 +156,123 @@ header {
   }
 
   .main-content {
-    //padding: 60px;
-    height: 500px;
     width: 100%;
   }
 }
 
-section .hero-wrap {
-  border-bottom: 0.5px solid #d5d5d5;
 
-  .col-md-7 {
-    background: #fff;
-    padding-bottom: 40px;
+.hero {
+  max-width: 2560px;
+  margin: 0 auto;
+  .hero-wrap {
+    border-bottom: 0.5px solid #d5d5d5;
 
-    .hero-head {
-      padding: 60px 0 0 60px;
+    .col-md-7 {
+      background: #fff;
+      padding-bottom: 40px;
 
-      h1 {
-        font-weight: 300;
-      }
+      .hero-head {
+        padding: 60px 0 0 60px;
 
-      p {
-        padding: 5px 0 10px;
-      }
-
-      a {
-        font-size: 13px;
-        padding: 10px 30px;
-        color: #fff;
-        background: #0b4682;
-        border-radius: 30px;
-        transition: .3s ease;
-
-        &:hover {
-          cursor: pointer;
-          background: #0e559e;
+        h1 {
+          font-weight: 300;
         }
-      }
-    }
 
-    .hero-footer {
-      padding: 60px 0 0 60px;
-      margin-top: 100px;
-      border-top: 0.5px solid #d5d5d5;
-    }
-  }
+        p {
+          padding: 5px 0 10px;
+        }
 
-  .col-md-5 {
-    border-left: 0.5px solid #d5d5d5;
+        a {
+          font-size: 13px;
+          padding: 10px 30px;
+          color: #fff;
+          background: #0b4682;
+          border-radius: 30px;
+          transition: .3s ease;
 
-    .carousel {
-      height: 100%;
-
-      .carousel-control-prev {
-        span {
-          &:first-child {
-            &:before {
-              content: '';
-
-            }
+          &:hover {
+            cursor: pointer;
+            background: #0e559e;
           }
         }
       }
 
-      .carousel-inner {
+      .hero-footer {
+        padding: 60px 0 0 60px;
+        margin-top: 100px;
+        border-top: 0.5px solid #d5d5d5;
+      }
+    }
+
+    .hero-rightside {
+      position: relative;
+      overflow: hidden;
+      .hero-slider {
+        width: 100%;
         height: 100%;
-
-        .carousel-item {
-          height: 100%;
-
+        .hero-slider-item {
           img {
-            height: 100%;
+            width: 100%;
+            height: 600px;
           }
         }
       }
-    }
-
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      bottom: 0;
-      right: 0;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      border: 1px solid #d5d5d5;
-      z-index: 1;
+      .hero-slider-arrows {
+        padding: 0 30px;
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        svg {
+          fill: #fff;
+          &:hover {
+            cursor: pointer;
+          }
+          path {
+            transform: scale(2);
+          }
+        }
+      }
+      .hero-slider-circle-big {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        border: 0.5px solid #fff;
+        border-radius: 50%;
+        width: 600px;
+        height: 600px;
+        transform: scale(1.15);
+        z-index: 1;
+      }
+      .hero-slider-circle-small {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0 auto;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        width: 600px;
+        height: 600px;
+        transform: scale(1.1);
+        z-index: 1;
+      }
     }
   }
 }
 
 .polygraphy-in-kiev {
-  padding: 50px;
+  padding: 50px 0;
   background: #F5F7FC;
+  position: relative;
+  z-index: 2;
 
   .col-md-5 {
     span {
@@ -315,6 +345,99 @@ section .hero-wrap {
       p {
         text-transform: uppercase;
         color: #fff;
+      }
+    }
+  }
+}
+
+.our-clients {
+  padding: 50px 0;
+  background: #F5F7FC;
+  .our-clients-wrap {
+    background: #fff;
+    border: 0.5px solid #d5d5d5;
+    .our-clients-wrap-leftside {
+      .our-clients-wrap-leftside-item {
+        padding: 50px;
+        border: 0.5px solid #d5d5d5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .3s;
+        h2 {
+          text-align: center;
+        }
+        &:hover {
+          background: #0e559e;
+        }
+      }
+    }
+    .our-clients-wrap-rightside {
+      padding: 50px 90px 0 90px;
+      .our-clients-slider-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .comment-icon {
+          width: 50px;
+          height: 50px;
+          background: #0e559e;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          img {
+            width: 30px;
+          }
+        }
+        .comment-company {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          .comment-company-logo {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            img {
+              border-radius: 50%;
+              width: 50px;
+            }
+          }
+          p {
+            text-transform: uppercase;
+            font-size: 12px;
+          }
+        }
+        p{
+          text-align: center;
+        }
+      }
+    }
+    .slick-dots {
+      margin: 0 auto;
+      width: 20%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      li {
+        background: #a4b9ce;
+        border-radius: 50%;
+        width: 10px;
+        height: 10px;
+        transition: .3s ease;
+        &:hover {
+          cursor: pointer;
+        }
+      }
+      button {
+        display: none;
+      }
+      .slick-active {
+        width: 20px;
+        height: 10px;
+        border-radius: 40%;
+        background: #0e559e;
       }
     }
   }

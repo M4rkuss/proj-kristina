@@ -12,6 +12,20 @@ function changeLang () {
 changeLang()
 
 $(document).ready (() => {
+  $('.our-clients-slider').slick({
+    arrows: false,
+    dots: true,
+    accessibility: false,
+  })
+
+  $('.hero-slider').slick({
+    arrows: true,
+    dots: false,
+    accessibility: false,
+    prevArrow: '#heroArrowLeft',
+    nextArrow: '#heroArrowRight',
+  })
+
   $('.portfolio-slider').slick({
     arrows: true,
     dots: false,
