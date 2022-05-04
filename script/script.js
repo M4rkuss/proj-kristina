@@ -12,6 +12,16 @@ function changeLang () {
 changeLang()
 
 $(document).ready (() => {
+  $('.top-sales-body-slider').slick({
+    arrows: true,
+    dots: false,
+    accessibility: false,
+    prevArrow: '#topSalesArrowLeft',
+    nextArrow: '#topSalesArrowRight',
+    slidesToShow: 4,
+    slidesToScroll: 4
+  })
+
   $('.our-clients-slider').slick({
     arrows: false,
     dots: true,
@@ -46,3 +56,6 @@ $(document).ready (() => {
     $status.text('0' + i + ' / 0' + slick.slideCount);
   });
 })
+
+// current year in footer
+document.getElementById('currentYear').innerText = new Date().getFullYear()
