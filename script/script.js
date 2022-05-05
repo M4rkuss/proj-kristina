@@ -59,3 +59,11 @@ $(document).ready (() => {
 
 // current year in footer
 document.getElementById('currentYear').innerText = new Date().getFullYear()
+
+
+window.addEventListener('scroll', function() {
+  if (pageYOffset > 4000 && pageYOffset <= 4300) {
+    document.getElementById("asideSocialNetworks").classList.add('aside-position')
+  }
+  if ( pageYOffset <= 4000) document.getElementById("asideSocialNetworks").classList.remove('aside-position')
+});

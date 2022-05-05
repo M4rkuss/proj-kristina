@@ -130,6 +130,31 @@ header .header-wrap-right-side .header-btn-order a:hover {
 .left-aside {
   border-right: 0.5px solid #d5d5d5;
   border-left: 0.5px solid #d5d5d5;
+  display: flex;
+  justify-content: center;
+}
+.left-aside .social-networks {
+  position: fixed;
+  bottom: 50px;
+  margin: 0 auto;
+  transition: 0.4s ease;
+}
+.left-aside .social-networks .social-inst, .left-aside .social-networks .social-fb {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left-aside .social-networks svg {
+  fill: #014b94;
+  width: 20px;
+  height: 20px;
+}
+.left-aside .aside-position {
+  position: absolute;
+  bottom: 0;
 }
 
 .hero {
