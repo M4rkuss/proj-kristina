@@ -230,6 +230,34 @@ header .header-wrap-right-side .header-btn-order a:hover {
 .hero .hero-wrap .hero-rightside .hero-slider-arrows svg path {
   transform: scale(2);
 }
+.hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowLeft {
+  position: relative;
+}
+.hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowLeft:before {
+  content: "(";
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  transform: scale(2);
+  color: #fff;
+}
+.hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowRight {
+  position: relative;
+}
+.hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowRight:before {
+  content: ")";
+  position: absolute;
+  top: 3px;
+  right: -20px;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  transform: scale(2);
+  color: #fff;
+}
 .hero .hero-wrap .hero-rightside .hero-slider-circle-big {
   position: absolute;
   top: 0;
@@ -483,6 +511,44 @@ header .header-wrap-right-side .header-btn-order a:hover {
 .top-sales .top-sales-slider-arrows span {
   color: #014b94;
 }
+.top-sales .top-sales-slider-arrows #topSalesArrowLeft {
+  position: relative;
+}
+.top-sales .top-sales-slider-arrows #topSalesArrowLeft:before {
+  content: "(";
+  position: absolute;
+  top: 3px;
+  left: -10px;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  transform: scale(2);
+  color: #014b94;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.top-sales .top-sales-slider-arrows #topSalesArrowLeft:hover:before {
+  opacity: 1;
+}
+.top-sales .top-sales-slider-arrows #topSalesArrowRight {
+  position: relative;
+}
+.top-sales .top-sales-slider-arrows #topSalesArrowRight:before {
+  content: ")";
+  position: absolute;
+  top: 3px;
+  right: -10px;
+  margin: 0 auto;
+  width: 10px;
+  height: 10px;
+  transform: scale(2);
+  color: #014b94;
+  opacity: 0;
+  transition: 0.3s ease;
+}
+.top-sales .top-sales-slider-arrows #topSalesArrowRight:hover:before {
+  opacity: 1;
+}
 .top-sales .top-sales-slider-arrows svg {
   fill: #d5d5d5;
   transition: 0.3s ease;
@@ -540,85 +606,97 @@ header .header-wrap-right-side .header-btn-order a:hover {
 .personal {
   background: #f4f7fc;
 }
+.personal .container {
+  padding: 0;
+}
 .personal .personal-item {
   padding: 20px;
   height: 423px;
+  background-color: #f4f7fc;
+  background-position: center center;
+  border: 0.5px solid #fff;
   position: relative;
-  background: #f4f7fc;
-  z-index: 1;
-  border-right: 1px solid #fff;
-  border-bottom: 1px solid #fff;
-  transition: 0.4s ease;
+  transition: 0.5s ease;
 }
-.personal .personal-item:nth-child(3) {
-  border-right: none;
-}
-.personal .personal-item .personal-circle svg {
+.personal .personal-item:before {
+  content: "";
   position: absolute;
-  background-image: url(/img/person1.jpeg);
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
-  left: 0;
-  right: 0;
-  top: 70px;
-  margin: 0 auto;
-  width: 200px;
-  height: 200px;
-  fill: transparent;
-  stroke: #fff;
-  z-index: 2;
-  transition: 0.5s;
-}
-.personal .personal-item span {
-  color: #36373b;
-}
-.personal .personal-item p {
-  color: #36373b;
-  font-size: 10px;
-}
-.personal .personal-item .person-info {
-  position: absolute;
-  top: 20px;
-  opacity: 0;
-  transition: 0.4s ease;
-  z-index: 10;
-}
-.personal .personal-item .person-info-second {
-  z-index: 10;
-}
-.personal .personal-item .person-info-second .person-info-second-more {
-  display: none;
-  opacity: 0;
-  transition: 0.4s ease;
-  z-index: 10;
-}
-.personal .personal-item:hover {
-  background: #014b94;
-  opacity: 0.9;
-  cursor: pointer;
-}
-.personal .personal-item:hover p, .personal .personal-item:hover span {
-  color: #fff;
-}
-.personal .personal-item:hover svg {
   background-image: url(/img/person1.jpeg);
   background-repeat: no-repeat;
-  background-position: center 40px;
-  background-size: 90%;
-  border-radius: 0;
-  stroke: none;
-  transform: scale(2);
-  z-index: 5;
+  background-position: center center;
+  transform: scale(1.3);
+  border: 1px solid #fff;
+  top: 80px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  transition: 0.5s ease;
 }
-.personal .personal-item:hover .person-info {
-  display: block;
+.personal .personal-item:hover {
+  transition: 0.5s ease;
+  background-image: url(/img/person1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.personal .personal-item:hover:before {
+  transform: scale(1.5);
+  background: none;
+}
+.personal .personal-item:hover:after {
+  transition: 0.5s ease;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background-color: #014b94;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+}
+.personal .personal-item:hover .personal-item-head {
   opacity: 1;
 }
-.personal .personal-item:hover .person-info-second-main {
+.personal .personal-item:hover .personal-item-footer-first {
+  display: flex;
+  opacity: 1;
+}
+.personal .personal-item:hover .personal-item-footer-second {
   display: none;
 }
-.personal .personal-item:hover .person-info-second-more {
-  display: block;
-  opacity: 1;
+.personal .personal-item .personal-item-head {
+  width: 50%;
+  color: #fff;
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.personal .personal-item .personal-item-head p {
+  font-size: 11px;
+}
+.personal .personal-item .personal-item-footer-first {
+  position: relative;
+  z-index: 10;
+  opacity: 0;
+  display: none;
+  transition: 0.5s ease;
+}
+.personal .personal-item .personal-item-footer-first a {
+  text-transform: none;
+  font-size: 11px;
+  color: #fff;
+}
+.personal .personal-item .personal-item-footer-second {
+  color: #36373b;
+  width: 50%;
+}
+.personal .personal-item .personal-item-footer-second p {
+  font-size: 11px;
 }
 
 .map {

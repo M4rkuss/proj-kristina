@@ -165,11 +165,13 @@ header {
   border-left: 0.5px solid #d5d5d5;
   display: flex;
   justify-content: center;
+
   .social-networks {
     position: fixed;
     bottom: 50px;
     margin: 0 auto;
     transition: .4s ease;
+
     .social-inst, .social-fb {
       width: 40px;
       height: 40px;
@@ -178,12 +180,14 @@ header {
       justify-content: center;
       align-items: center;
     }
+
     svg {
       fill: $main-blue;
       width: 20px;
       height: 20px;
     }
   }
+
   .aside-position {
     position: absolute;
     bottom: 0;
@@ -276,6 +280,34 @@ header {
 
           path {
             transform: scale(2);
+          }
+        }
+        #heroArrowLeft {
+          position: relative;
+          &:before {
+            content: '(';
+            position: absolute;
+            top: 3px;
+            left: -10px;
+            margin: 0 auto;
+            width: 10px;
+            height: 10px;
+            transform: scale(2);
+            color: #fff;
+          }
+        }
+        #heroArrowRight {
+          position: relative;
+          &:before {
+            content: ')';
+            position: absolute;
+            top: 3px;
+            right: -20px;
+            margin: 0 auto;
+            width: 10px;
+            height: 10px;
+            transform: scale(2);
+            color: #fff;
           }
         }
       }
@@ -602,6 +634,50 @@ header {
       color: $main-blue;
     }
 
+    #topSalesArrowLeft {
+      position: relative;
+      &:before {
+        content: '(';
+        position: absolute;
+        top: 3px;
+        left: -10px;
+        margin: 0 auto;
+        width: 10px;
+        height: 10px;
+        transform: scale(2);
+        color: $main-blue;
+        opacity: 0;
+        transition: .3s ease;
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+
+    #topSalesArrowRight {
+      position: relative;
+      &:before {
+        content: ')';
+        position: absolute;
+        top: 3px;
+        right: -10px;
+        margin: 0 auto;
+        width: 10px;
+        height: 10px;
+        transform: scale(2);
+        color: $main-blue;
+        opacity: 0;
+        transition: .3s ease;
+      }
+      &:hover {
+        &:before {
+          opacity: 1;
+        }
+      }
+    }
+
     svg {
       fill: #d5d5d5;
       transition: .3s ease;
@@ -624,25 +700,31 @@ header {
 
 .stages {
   padding: 50px;
+
   .stages-head {
     h2 {
       color: $main-text;
     }
   }
+
   .stages-body {
     width: 100%;
+
     .stages-body-item {
       width: 11%;
-      span{
+
+      span {
         color: $main-blue;
         font-size: 20px;
       }
+
       p {
         text-align: center;
         color: $main-text;
         margin-top: 30px;
         text-transform: uppercase;
       }
+
       svg {
         fill: $main-blue;
         width: 100px;
@@ -650,12 +732,15 @@ header {
         margin: 0 auto;
       }
     }
+
     .stages-body-item-arrow {
       margin-top: -40px;
+
       svg {
         fill: $main-blue;
         margin-left: 30px;
       }
+
       path {
         transform: scale(1.9);
       }
@@ -665,85 +750,97 @@ header {
 
 .personal {
   background: $main-bg;
+
+  .container {
+    padding: 0;
+  }
+
   .personal-item {
     padding: 20px;
     height: 423px;
+    background-color: $main-bg;
+    background-position: center center;
+    border: 0.5px solid #fff;
     position: relative;
-    background: $main-bg;
-    z-index: 1;
-    border-right: 1px solid #fff;
-    border-bottom: 1px solid #fff;
-    transition: .4s ease;
-    &:nth-child(3) {
-      border-right: none;
-    }
-    .personal-circle {
-      svg {
-        position: absolute;
-        background-image: url(/img/person1.jpeg);
-        border-radius: 50%;
-        left: 0;
-        right: 0;
-        top: 70px;
-        margin: 0 auto;
-        width: 200px;
-        height: 200px;
-        fill: transparent;
-        stroke: #fff;
-        z-index: 2;
-        transition: .5s;
-      }
-    }
-    span {
-      color: $main-text;
-    }
-    p{
-      color: $main-text;
-      font-size: 10px;
-    }
-    .person-info {
+    transition: .5s ease;
+    &:before {
+      content: '';
       position: absolute;
-      top: 20px;
-      opacity: 0;
-      transition: .4s ease;
-      z-index: 10;
-    }
-    .person-info-second {
-      z-index: 10;
-      .person-info-second-more {
-        display: none;
-        opacity: 0;
-        transition: .4s ease;
-        z-index: 10;
-      }
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background-image: url(/img/person1.jpeg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      transform: scale(1.3);
+      border: 1px solid #fff;
+      top: 80px;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: .5s ease;
     }
     &:hover {
-      background: $main-blue;
-      opacity: .9;
-      cursor: pointer;
-      p, span {
-        color: #fff;
+      transition: .5s ease;
+      background-image: url(/img/person1.jpeg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      &:before {
+        transform: scale(1.5);
+        background: none;
       }
-      svg {
-        background-image: url(/img/person1.jpeg);
-        background-repeat: no-repeat;
-        background-position: center 40px;
-        background-size: 90%;
-        border-radius: 0;
-        stroke: none;
-        transform: scale(2);
-        z-index: 5;
+      &:after {
+        transition: .5s ease;
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-color: $main-blue;
+        opacity: .7;
+        width: 100%;
+        height: 100%;
       }
-      .person-info {
-        display: block;
+      .personal-item-head {
         opacity: 1;
       }
-      .person-info-second-main {
+      .personal-item-footer-first {
+        display: flex;
+        opacity: 1;
+      }
+      .personal-item-footer-second {
         display: none;
       }
-      .person-info-second-more {
-        display: block;
-        opacity: 1;
+    }
+    .personal-item-head {
+      width: 50%;
+      color: #fff;
+      position: relative;
+      z-index: 10;
+      opacity: 0;
+      transition: .5s ease;
+      p {
+        font-size: 11px;
+      }
+    }
+    .personal-item-footer-first {
+      position: relative;
+      z-index: 10;
+      opacity: 0;
+      display: none;
+      transition: .5s ease;
+      a {
+        text-transform: none;
+        font-size: 11px;
+        color: #fff;
+      }
+    }
+    .personal-item-footer-second {
+      color: $main-text;
+      width: 50%;
+      p {
+        font-size: 11px;
       }
     }
   }
@@ -757,15 +854,18 @@ header {
 .footer {
   padding: 50px 50px 50px 120px;
   border-top: 0.5px solid #d5d5d5;
+
   span {
     text-transform: uppercase;
     font-size: 16px;
     color: $main-text;
   }
-  p{
+
+  p {
     color: $main-text;
     font-size: 14px;
   }
+
   ul {
     li {
       margin-bottom: 7px;
@@ -773,6 +873,7 @@ header {
       font-weight: 300;
       text-transform: none;
       color: $main-text;
+
       a {
         font-size: 13px;
         font-weight: 300;
@@ -786,15 +887,17 @@ header {
     .social-inst, .social-fb {
       width: 40px;
       height: 40px;
-      background: #36373b ;
+      background: #36373b;
       border-radius: 50%;
       display: flex;
       justify-content: center;
       align-items: center;
     }
+
     .social-fb {
       margin-left: 15px;
     }
+
     svg {
       fill: #fff;
       width: 20px;
@@ -808,6 +911,7 @@ footer {
   background: $main-blue;
   color: #fff;
   padding: 20px 50px 20px 120px;
+
   p {
     margin-bottom: 0;
   }
