@@ -19,7 +19,30 @@ $(document).ready (() => {
     prevArrow: '#topSalesArrowLeft',
     nextArrow: '#topSalesArrowRight',
     slidesToShow: 4,
-    slidesToScroll: 4
+    slidesToScroll: 4,
+    responsive: [
+      {
+        breakpoint: 1060,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        }
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 499,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   })
 
   $('.our-clients-slider').slick({

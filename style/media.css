@@ -1,0 +1,198 @@
+@media screen and (max-width: 1300px) {
+  .header-wrap-right-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
+  }
+  .header-wrap-right-side .header-lang {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 1060px) {
+  .hero-leftside {
+    padding-bottom: 0 !important;
+  }
+
+  .polygraphy-in-kiev .col-md-4 p:first-child {
+    font-size: 45px !important;
+  }
+
+  .our-clients-wrapper {
+    flex-direction: column !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-clients-slider {
+    padding-bottom: 30px;
+  }
+
+  footer {
+    padding: 20px !important;
+  }
+}
+@media screen and (max-width: 950px) {
+  .left-aside {
+    display: none !important;
+  }
+
+  .main-content {
+    max-width: 100% !important;
+    width: 100% !important;
+  }
+
+  header {
+    border-bottom: 0.5px solid #d5d5d5;
+  }
+  header .col-md-1 {
+    max-width: 20% !important;
+    flex-basis: 30%;
+  }
+  header .col-md-11 {
+    background: #fff;
+    flex-basis: 80%;
+  }
+  header .col-md-11 .header-wrap-left-side {
+    display: none !important;
+  }
+  header .col-md-11 .header-wrap-right-side {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
+    width: 100%;
+  }
+  header .col-md-11 .header-wrap-right-side .header-lang, header .col-md-11 .header-wrap-right-side .header-btn-order {
+    display: none;
+  }
+  header .col-md-11 .header-wrap-right-side .header-wrap-menu-btn {
+    display: flex !important;
+    align-items: center;
+    color: #36373b;
+    margin-right: 30px;
+  }
+  header .col-md-11 .header-wrap-right-side .header-wrap-menu-btn .burger-menu span {
+    color: #36373b;
+    font-weight: 500;
+  }
+
+  .hero-head, .hero-footer {
+    padding: 30px 0 0 30px !important;
+  }
+
+  .hero-footer p {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 770px) {
+  .hero-footer .col-md-4 {
+    width: 33% !important;
+  }
+
+  .our-clients-wrap-leftside .col-md-6 {
+    width: 50% !important;
+  }
+
+  .footer .col-md-3:first-child {
+    margin-bottom: 50px;
+  }
+  .footer .col-md-3:nth-child(2) {
+    width: 50% !important;
+  }
+  .footer .col-md-3:nth-child(3) {
+    width: 50% !important;
+    margin-bottom: 20px;
+  }
+
+  .top-sales-head h2 {
+    font-size: 1.5rem;
+  }
+  .top-sales-head .top-sales-head-rightside p {
+    font-size: 16px;
+  }
+
+  .stages-body-item-arrow svg {
+    margin-left: 50px;
+  }
+
+  .stages-body-item svg {
+    width: 70px !important;
+    height: 70px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .stages, .top-sales, .portfolio-leftside, .polygraphy-in-kiev, .hero-head {
+    padding: 20px !important;
+  }
+
+  .portfolio-rightside {
+    padding: 50px 20px !important;
+  }
+  .portfolio-rightside h3 {
+    font-size: 28px !important;
+  }
+
+  .top-sales-head .col-md-12 {
+    flex-wrap: wrap;
+  }
+
+  .top-sales-head-leftside {
+    width: 100% !important;
+  }
+  .top-sales-head-leftside h2 {
+    margin-bottom: 10px;
+  }
+
+  .top-sales-head-rightside {
+    width: 100% !important;
+  }
+
+  .our-clients-wrap-rightside {
+    padding: 50px 20px 0 20px !important;
+  }
+  .our-clients-wrap-rightside .slick-dots {
+    width: 40% !important;
+  }
+
+  .hero-footer {
+    margin-top: 50px !important;
+  }
+
+  .stages-body {
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+  .stages-body .stages-body-item {
+    width: 100% !important;
+  }
+  .stages-body .stages-body-item p {
+    font-size: 14px;
+  }
+  .stages-body .stages-body-item-arrow {
+    margin-left: -20px;
+  }
+  .stages-body .stages-body-item-arrow svg {
+    margin-left: 0 !important;
+    transform: rotate(90deg);
+    margin-top: 70px;
+  }
+
+  .footer {
+    padding: 40px !important;
+  }
+}
+@media screen and (max-width: 380px) {
+  .footer .row {
+    flex-wrap: wrap;
+  }
+  .footer .row .col-md-3 {
+    width: 100% !important;
+  }
+  .footer .row .col-md-3:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+
+/*# sourceMappingURL=media.css.map */

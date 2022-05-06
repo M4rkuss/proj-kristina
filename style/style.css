@@ -1,4 +1,5 @@
 @import "fonts.css";
+@import "media.css";
 *, html, body {
   margin: 0;
   padding: 0;
@@ -267,8 +268,8 @@ header .header-wrap-right-side .header-btn-order a:hover {
   margin: 0 auto;
   border: 0.5px solid #fff;
   border-radius: 50%;
-  width: 600px;
-  height: 600px;
+  width: 110%;
+  height: 110%;
   transform: scale(1.15);
   z-index: 1;
 }
@@ -281,14 +282,14 @@ header .header-wrap-right-side .header-btn-order a:hover {
   margin: 0 auto;
   border: 1px solid #fff;
   border-radius: 50%;
-  width: 600px;
-  height: 600px;
+  width: 110%;
+  height: 110%;
   transform: scale(1.1);
   z-index: 1;
 }
 
 .polygraphy-in-kiev {
-  padding: 50px 0;
+  padding: 50px 0 50px 30px;
   background: #F5F7FC;
   position: relative;
   z-index: 2;
@@ -396,8 +397,9 @@ header .header-wrap-right-side .header-btn-order a:hover {
   flex-direction: column;
   align-items: center;
 }
-.our-clients .our-clients-wrap .our-clients-wrap-rightside .our-clients-slider-item h2 {
+.our-clients .our-clients-wrap .our-clients-wrap-rightside .our-clients-slider-item h3 {
   color: #36373b;
+  text-align: center;
 }
 .our-clients .our-clients-wrap .our-clients-wrap-rightside .our-clients-slider-item p {
   color: #36373b;
@@ -439,7 +441,7 @@ header .header-wrap-right-side .header-btn-order a:hover {
 }
 .our-clients .our-clients-wrap .slick-dots {
   margin: 0 auto;
-  width: 20%;
+  width: 30%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -756,6 +758,10 @@ footer {
 }
 footer p {
   margin-bottom: 0;
+}
+
+.header-wrap-menu-btn .burger-menu rect {
+  fill: #014b94;
 }
 
 /*# sourceMappingURL=style.css.map */
