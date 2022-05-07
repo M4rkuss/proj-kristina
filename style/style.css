@@ -61,6 +61,12 @@ header .col-md-11 .header-wrap-left-side .header-navigation nav ul {
   height: 100%;
   margin-bottom: 0;
 }
+header .col-md-11 .header-wrap-left-side .header-navigation nav ul .active {
+  background: #36373b;
+}
+header .col-md-11 .header-wrap-left-side .header-navigation nav ul .active a {
+  color: #fff;
+}
 header .col-md-11 .header-wrap-left-side .header-navigation nav ul li {
   display: flex;
   justify-content: center;
@@ -76,6 +82,15 @@ header .col-md-11 .header-wrap-left-side .header-navigation nav ul li {
   transition: 0.4s ease;
   font-size: 14px;
 }
+header .col-md-11 .header-wrap-left-side .header-navigation nav ul li a {
+  color: #36373b;
+  transition: 0.4s ease;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 header .col-md-11 .header-wrap-left-side .header-navigation nav ul li span {
   position: absolute;
   bottom: 10px;
@@ -87,6 +102,9 @@ header .col-md-11 .header-wrap-left-side .header-navigation nav ul li:hover {
   background: #36373b;
   color: #fff;
   cursor: pointer;
+}
+header .col-md-11 .header-wrap-left-side .header-navigation nav ul li:hover a {
+  color: #fff;
 }
 header .col-md-11 .header-wrap-left-side .header-navigation nav ul li:hover span {
   color: #fff;
@@ -747,7 +765,7 @@ header .header-wrap-right-side .header-btn-order a:hover {
   justify-content: center;
   align-items: center;
 }
-.footer .social-networks .social-fb {
+.footer .social-networks .social-inst {
   margin-left: 15px;
 }
 .footer .social-networks svg {
@@ -832,6 +850,63 @@ footer p {
 
 .nav-menu.opened {
   transform: translateX(0);
+}
+
+.contacts {
+  padding: 50px;
+}
+.contacts h1 {
+  font-size: 50px;
+  color: #36373b;
+  margin-bottom: 40px;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-body {
+  margin-bottom: 25px;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-body p {
+  text-transform: uppercase;
+  color: #36373b;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-body a {
+  text-transform: none;
+  color: #014b94;
+  font-size: 21px;
+  font-weight: 300;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-body .contacts-wrap-leftside-body-write {
+  margin-left: 50px;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-footer .contacts-wrap-leftside-footer-icons {
+  margin-top: 30px;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-footer .contacts-wrap-leftside-footer-icons .social-inst, .contacts .contacts-wrap-leftside .contacts-wrap-leftside-footer .contacts-wrap-leftside-footer-icons .social-fb {
+  width: 40px;
+  height: 40px;
+  background: #36373b;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-footer .contacts-wrap-leftside-footer-icons .social-inst {
+  margin-left: 15px;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-footer .contacts-wrap-leftside-footer-icons svg {
+  fill: #fff;
+  width: 20px;
+  height: 20px;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-footer span {
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #323232;
+}
+.contacts .contacts-wrap-leftside .contacts-wrap-leftside-footer p {
+  color: #323232;
+  margin-bottom: 0;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

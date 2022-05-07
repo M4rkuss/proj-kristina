@@ -72,6 +72,14 @@ header {
             height: 100%;
             margin-bottom: 0;
 
+            .active {
+              background: $menu-hover;
+
+              a {
+                color: #fff;
+              }
+            }
+
             li {
               display: flex;
               justify-content: center;
@@ -87,6 +95,16 @@ header {
               transition: .4s ease;
               font-size: 14px;
 
+              a {
+                color: $main-text;
+                transition: .4s ease;
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
               span {
                 position: absolute;
                 bottom: 10px;
@@ -99,6 +117,10 @@ header {
                 background: $menu-hover;
                 color: #fff;
                 cursor: pointer;
+
+                a {
+                  color: #fff;
+                }
 
                 span {
                   color: #fff;
@@ -283,8 +305,10 @@ header {
             transform: scale(2);
           }
         }
+
         #heroArrowLeft {
           position: relative;
+
           &:before {
             content: '(';
             position: absolute;
@@ -297,8 +321,10 @@ header {
             color: #fff;
           }
         }
+
         #heroArrowRight {
           position: relative;
+
           &:before {
             content: ')';
             position: absolute;
@@ -462,6 +488,7 @@ header {
       .mayak {
         background-color: $main-blue;
       }
+
       .our-clients-wrap-leftside-item {
         padding: 20px;
         border: 0.5px solid #d5d5d5;
@@ -641,6 +668,7 @@ header {
 
     #topSalesArrowLeft {
       position: relative;
+
       &:before {
         content: '(';
         position: absolute;
@@ -654,6 +682,7 @@ header {
         opacity: 0;
         transition: .3s ease;
       }
+
       &:hover {
         &:before {
           opacity: 1;
@@ -663,6 +692,7 @@ header {
 
     #topSalesArrowRight {
       position: relative;
+
       &:before {
         content: ')';
         position: absolute;
@@ -676,6 +706,7 @@ header {
         opacity: 0;
         transition: .3s ease;
       }
+
       &:hover {
         &:before {
           opacity: 1;
@@ -768,6 +799,7 @@ header {
     border: 0.5px solid #fff;
     position: relative;
     transition: .5s ease;
+
     &:before {
       content: '';
       position: absolute;
@@ -785,15 +817,18 @@ header {
       margin: 0 auto;
       transition: .5s ease;
     }
+
     &:hover {
       transition: .5s ease;
       background-image: url(/img/person1.jpeg);
       background-repeat: no-repeat;
       background-size: cover;
+
       &:before {
         transform: scale(1.5);
         background: none;
       }
+
       &:after {
         transition: .5s ease;
         content: "";
@@ -807,17 +842,21 @@ header {
         width: 100%;
         height: 100%;
       }
+
       .personal-item-head {
         opacity: 1;
       }
+
       .personal-item-footer-first {
         display: flex;
         opacity: 1;
       }
+
       .personal-item-footer-second {
         display: none;
       }
     }
+
     .personal-item-head {
       width: 50%;
       color: #fff;
@@ -825,25 +864,30 @@ header {
       z-index: 10;
       opacity: 0;
       transition: .5s ease;
+
       p {
         font-size: 11px;
       }
     }
+
     .personal-item-footer-first {
       position: relative;
       z-index: 10;
       opacity: 0;
       display: none;
       transition: .5s ease;
+
       a {
         text-transform: none;
         font-size: 11px;
         color: #fff;
       }
     }
+
     .personal-item-footer-second {
       color: $main-text;
       width: 50%;
+
       p {
         font-size: 11px;
       }
@@ -905,7 +949,7 @@ header {
       align-items: center;
     }
 
-    .social-fb {
+    .social-inst {
       margin-left: 15px;
     }
 
@@ -930,7 +974,7 @@ footer {
 
 .header-wrap-menu-btn {
   .burger-menu {
-    rect{
+    rect {
       fill: $main-blue;
     }
   }
@@ -945,10 +989,12 @@ footer {
   transition: .5s ease;
   z-index: 99999;
   padding: 80px 40px;
+
   .nav-menu-head {
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     .header-btn-order {
       a {
         font-size: 13px;
@@ -965,14 +1011,17 @@ footer {
       }
     }
   }
+
   .nav-menu-body {
     text-align: center;
     margin-top: 100px;
+
     p {
       font-size: 25px;
       color: $main-text;
       margin-bottom: 15px;
     }
+
     div {
       width: 25%;
       height: 1px;
@@ -980,17 +1029,21 @@ footer {
       margin: 60px auto 0 auto;
     }
   }
+
   .nav-menu-footer {
     text-align: center;
     margin-top: 30px;
+
     a {
       text-decoration: none;
       color: $main-text;
       font-size: 25px;
     }
+
     .nav-menu-footer-icons {
       width: 25%;
       margin: 20px auto 0 auto;
+
       a {
         svg {
           width: 25px;
@@ -1004,3 +1057,73 @@ footer {
 .nav-menu.opened {
   transform: translateX(0);
 }
+
+
+// contact page style
+
+.contacts {
+  padding: 50px;
+
+  h1 {
+    font-size: 50px;
+    color: $main-text;
+    margin-bottom: 40px;
+  }
+
+  .contacts-wrap-leftside {
+    .contacts-wrap-leftside-body {
+      margin-bottom: 25px;
+      p {
+        text-transform: uppercase;
+        color: $main-text;
+        margin-bottom: 0;
+        font-size: 18px;
+      }
+      a {
+        text-transform: none;
+        color: $main-blue;
+        font-size: 21px;
+        font-weight: 300;
+      }
+      .contacts-wrap-leftside-body-write {
+        margin-left: 50px;
+      }
+    }
+    .contacts-wrap-leftside-footer {
+      .contacts-wrap-leftside-footer-icons {
+        margin-top: 30px;
+        .social-inst, .social-fb {
+          width: 40px;
+          height: 40px;
+          background: #36373b;
+          border-radius: 50%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .social-inst {
+          margin-left: 15px;
+        }
+
+        svg {
+          fill: #fff;
+          width: 20px;
+          height: 20px;
+        }
+      }
+      span {
+        font-size: 18px;
+        text-transform: uppercase;
+        color: #323232;
+      }
+      p {
+        color: #323232;
+        margin-bottom: 0;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+// end contact page style

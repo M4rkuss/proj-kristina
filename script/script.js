@@ -85,10 +85,16 @@ document.getElementById('currentYear').innerText = new Date().getFullYear()
 
 
 window.addEventListener('scroll', function() {
-  if (pageYOffset > 4000 && pageYOffset <= 4300) {
+  let body = document.body,
+    html = document.documentElement,
+    height = Math.max( body.scrollHeight, body.offsetHeight,
+    html.clientHeight, html.scrollHeight, html.offsetHeight );
+  console.log(height)
+
+  if (pageYOffset > height - 1417 && pageYOffset <= height - 1117) {
     document.getElementById("asideSocialNetworks").classList.add('aside-position')
   }
-  if ( pageYOffset <= 4000) document.getElementById("asideSocialNetworks").classList.remove('aside-position')
+  if ( pageYOffset <= height - 1417) document.getElementById("asideSocialNetworks").classList.remove('aside-position')
 });
 
 document.getElementById('menu-burger').onclick = function () {
