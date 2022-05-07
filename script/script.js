@@ -90,3 +90,11 @@ window.addEventListener('scroll', function() {
   }
   if ( pageYOffset <= 4000) document.getElementById("asideSocialNetworks").classList.remove('aside-position')
 });
+
+document.getElementById('menu-burger').onclick = function () {
+  document.getElementById('nav-menu').classList.add('opened')
+}
+
+document.getElementById('close-burger-icon').onclick = function () {
+  document.getElementById('nav-menu').classList.remove('opened')
+}

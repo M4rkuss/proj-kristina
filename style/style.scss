@@ -459,17 +459,19 @@ header {
     border: 0.5px solid #d5d5d5;
 
     .our-clients-wrap-leftside {
+      .mayak {
+        background-color: $main-blue;
+      }
       .our-clients-wrap-leftside-item {
-        padding: 50px;
+        padding: 20px;
         border: 0.5px solid #d5d5d5;
         display: flex;
         justify-content: center;
         align-items: center;
         transition: .3s;
 
-        h2 {
-          text-align: center;
-          color: $main-text;
+        img {
+          width: 100%;
         }
 
         &:hover {
@@ -480,6 +482,7 @@ header {
 
     .our-clients-wrap-rightside {
       padding: 50px 90px 0 90px;
+      margin-top: 100px;
 
       .our-clients-slider-item {
         display: flex;
@@ -857,6 +860,12 @@ header {
   padding: 50px 50px 50px 120px;
   border-top: 0.5px solid #d5d5d5;
 
+  .footer-logo {
+    img {
+      width: 250px;
+    }
+  }
+
   span {
     text-transform: uppercase;
     font-size: 16px;
@@ -925,4 +934,73 @@ footer {
       fill: $main-blue;
     }
   }
+}
+
+.nav-menu {
+  width: 100%;
+  position: fixed;
+  right: 0;
+  transform: translateX(100%);
+  background: #F1F5F8;
+  transition: .5s ease;
+  z-index: 99999;
+  padding: 80px 40px;
+  .nav-menu-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .header-btn-order {
+      a {
+        font-size: 13px;
+        padding: 10px 30px;
+        background: $main-blue;
+        color: #fff;
+        border-radius: 30px;
+        box-shadow: 0 5px 25px -5px #39B6FF;
+        transition: .3s ease;
+
+        &:hover {
+          background: $secondary-blue;
+        }
+      }
+    }
+  }
+  .nav-menu-body {
+    text-align: center;
+    margin-top: 100px;
+    p {
+      font-size: 25px;
+      color: $main-text;
+      margin-bottom: 15px;
+    }
+    div {
+      width: 25%;
+      height: 1px;
+      background: $main-text;
+      margin: 60px auto 0 auto;
+    }
+  }
+  .nav-menu-footer {
+    text-align: center;
+    margin-top: 30px;
+    a {
+      text-decoration: none;
+      color: $main-text;
+      font-size: 25px;
+    }
+    .nav-menu-footer-icons {
+      width: 25%;
+      margin: 20px auto 0 auto;
+      a {
+        svg {
+          width: 25px;
+          fill: $main-blue;
+        }
+      }
+    }
+  }
+}
+
+.nav-menu.opened {
+  transform: translateX(0);
 }

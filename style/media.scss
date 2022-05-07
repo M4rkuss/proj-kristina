@@ -33,8 +33,17 @@ $main-bg: #f4f7fc;
     justify-content: center;
     align-items: center;
   }
+  .our-clients-wrap-rightside {
+    margin-top: 0 !important;
+    padding: 50px 20px 0 20px !important;
+  }
   .our-clients-slider {
     padding-bottom: 30px;
+  }
+  .footer-logo {
+    img {
+      width: 180px !important;
+    }
   }
   footer {
     padding: 20px !important;
@@ -94,9 +103,27 @@ $main-bg: #f4f7fc;
       font-size: 13px;
     }
   }
+  .footer {
+    padding: 50px !important;
+    .footer-logo {
+      img {
+        width: 130px !important;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 770px) {
+  header {
+    .col-md-1 {
+      max-width: 30% !important;
+      flex-basis: 40%;
+    }
+
+    .col-md-11 {
+      flex-basis: 70%;
+    }
+  }
   .hero-footer {
     .col-md-4 {
       width: 33% !important;
@@ -147,6 +174,17 @@ $main-bg: #f4f7fc;
 }
 
 @media screen and (max-width: 500px) {
+  header {
+    position: static !important;
+    .col-md-1 {
+      max-width: 40% !important;
+      flex-basis: 50%;
+    }
+
+    .col-md-11 {
+      flex-basis: 60%;
+    }
+  }
   .stages, .top-sales, .portfolio-leftside, .polygraphy-in-kiev, .hero-head {
     padding: 20px !important;
   }
@@ -178,6 +216,9 @@ $main-bg: #f4f7fc;
   }
   .hero-footer {
     margin-top: 50px !important;
+    .col-md-4 {
+      width: 100% !important;
+    }
   }
   .stages-body {
     flex-direction: column;
@@ -213,6 +254,16 @@ $main-bg: #f4f7fc;
           margin-top: 20px;
         }
       }
+    }
+  }
+  .nav-menu {
+    .nav-menu-head-leftside {
+      a {
+        font-size: 10px !important;
+      }
+    }
+    .nav-menu-footer-icons {
+      width: 40% !important;
     }
   }
 }
