@@ -78,6 +78,14 @@ $(document).ready (() => {
     var i = (currentSlide ? currentSlide : 0) + 1;
     $status.text('0' + i + ' / 0' + slick.slideCount);
   });
+
+  $('.produkciya-wrap-rightside-slider').slick({
+    arrows: true,
+    dots: true,
+    accessibility: false,
+    prevArrow: '#produkciyaArrowLeft',
+    nextArrow: '#produkciyaArrowRight',
+  })
 })
 
 // current year in footer

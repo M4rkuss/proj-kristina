@@ -957,4 +957,90 @@ footer p {
   background: #0d559f;
 }
 
+.produkciya {
+  padding: 50px;
+}
+.produkciya .produkciya-wrap .produkciya-wrap-leftside h1 {
+  color: #36373b;
+}
+.produkciya .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item {
+  width: 30%;
+  height: 300px;
+}
+.produkciya .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item .produkciya-img {
+  width: 100%;
+  height: 90%;
+  background: #014b94;
+}
+.produkciya .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item p {
+  text-transform: uppercase;
+  color: #36373b;
+  margin-top: 10px;
+}
+.produkciya .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item span {
+  color: #36373b;
+  margin-bottom: 20px;
+}
+.produkciya .produkciya-wrap .slick-dots {
+  display: flex;
+  justify-content: start;
+  margin-left: 70px;
+}
+.produkciya .produkciya-wrap .slick-dots li button {
+  font-weight: 300;
+  color: #36373b;
+  outline: none;
+  background: none;
+  border: none;
+  font-size: 18px;
+  margin-right: 15px;
+}
+.produkciya .produkciya-wrap .slick-dots li:last-child button {
+  margin-right: 0;
+}
+.produkciya .produkciya-wrap .slick-dots .slick-active button {
+  color: #014b94;
+  text-decoration: underline;
+}
+.produkciya .produkciya-wrap a {
+  position: relative;
+  top: -40px;
+  margin-left: 15px;
+}
+.produkciya .produkciya-wrap a:last-child {
+  margin-left: 130px;
+}
+.produkciya .produkciya-wrap a svg {
+  fill: #d5d5d5;
+  transition: 0.4s;
+}
+.produkciya .produkciya-wrap a svg:hover {
+  fill: #014b94;
+  cursor: pointer;
+}
+
+.produkciya-info {
+  padding: 50px;
+}
+.produkciya-info h2, .produkciya-info p {
+  color: #36373b;
+}
+.produkciya-info .col-md-3 .produkciya-info-more {
+  margin-top: 50px;
+}
+.produkciya-info .col-md-3 .produkciya-info-more svg path {
+  transform: scale(2.3);
+}
+.produkciya-info .produkciya-info-more-rightside {
+  width: 100%;
+  height: 400px;
+  background: #014b94;
+}
+.produkciya-info .produkciya-info-footer {
+  margin-top: 50px;
+}
+.produkciya-info .produkciya-info-footer .produkciya-info-footer-item {
+  width: 45%;
+}
+
 /*# sourceMappingURL=style.css.map */

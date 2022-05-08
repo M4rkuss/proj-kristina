@@ -1148,8 +1148,10 @@ footer {
 
         &:nth-child(3) {
           width: 100%;
+
           input {
             padding-top: 50px;
+
             &::placeholder {
               transform: translateY(-50px);
             }
@@ -1194,4 +1196,121 @@ footer {
   }
 }
 
+
 // end contact page style
+.produkciya {
+  padding: 50px;
+
+  .produkciya-wrap {
+    .produkciya-wrap-leftside {
+      h1 {
+        color: $main-text;
+      }
+    }
+
+    .produkciya-wrap-rightside {
+      .produkciya-wrap-rightside-item {
+        width: 30%;
+        height: 300px;
+
+        .produkciya-img {
+          width: 100%;
+          height: 90%;
+          background: $main-blue;
+        }
+
+        p {
+          text-transform: uppercase;
+          color: $main-text;
+          margin-top: 10px;
+        }
+
+        span {
+          color: $main-text;
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    .slick-dots {
+      display: flex;
+      justify-content: start;
+      margin-left: 70px;
+
+      li {
+        button {
+          font-weight: 300;
+          color: $main-text;
+          outline: none;
+          background: none;
+          border: none;
+          font-size: 18px;
+          margin-right: 15px;
+        }
+
+        &:last-child {
+          button {
+            margin-right: 0;
+          }
+        }
+      }
+
+      .slick-active {
+        button {
+          color: $main-blue;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    a {
+      position: relative;
+      top: -40px;
+      margin-left: 15px;
+
+      &:last-child {
+        margin-left: 130px;
+      }
+
+      svg {
+        fill: #d5d5d5;
+        transition: .4s;
+
+        &:hover {
+          fill: $main-blue;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.produkciya-info {
+  padding: 50px;
+  h2, p {
+    color: $main-text;
+  }
+  .col-md-3 {
+    .produkciya-info-more {
+      margin-top: 50px;
+      svg {
+        path {
+          transform: scale(2.3);
+        }
+      }
+    }
+  }
+  .produkciya-info-more-rightside {
+    width: 100%;
+    height: 400px;
+    background: $main-blue;
+  }
+  .produkciya-info-footer {
+    margin-top: 50px;
+    .produkciya-info-footer-item {
+      width: 45%;
+    }
+  }
+}
+
+//
