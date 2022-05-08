@@ -6,9 +6,9 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Site title</title>
-    <link rel="stylesheet" href="style/bootstrap.min.css" />
-    <link rel="stylesheet" href="style/style.css" />
-    <link rel="stylesheet" href="style/slick.css" />
+    <link rel="stylesheet" href="style/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style/style.css"/>
+    <link rel="stylesheet" href="style/slick.css"/>
 </head>
 <body>
 
@@ -21,7 +21,8 @@
         </div>
         <div class="nav-menu-head-rightside" id="close-burger-icon">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M23.6972 1.76497C24.1009 1.36121 24.1009 0.706581 23.6972 0.302821C23.2934 -0.10094 22.6388 -0.10094 22.235 0.302821L12 10.5379L1.76497 0.302821C1.36121 -0.10094 0.706582 -0.10094 0.302821 0.302821C-0.100939 0.706581 -0.10094 1.36121 0.302821 1.76497L10.5379 12L0.302821 22.235C-0.10094 22.6388 -0.100941 23.2934 0.302821 23.6972C0.706582 24.1009 1.36121 24.1009 1.76497 23.6972L12 13.4621L22.235 23.6972C22.6388 24.1009 23.2934 24.1009 23.6972 23.6972C24.1009 23.2934 24.1009 22.6388 23.6972 22.235L13.4621 12L23.6972 1.76497Z" fill="#47655D"></path>
+                <path d="M23.6972 1.76497C24.1009 1.36121 24.1009 0.706581 23.6972 0.302821C23.2934 -0.10094 22.6388 -0.10094 22.235 0.302821L12 10.5379L1.76497 0.302821C1.36121 -0.10094 0.706582 -0.10094 0.302821 0.302821C-0.100939 0.706581 -0.10094 1.36121 0.302821 1.76497L10.5379 12L0.302821 22.235C-0.10094 22.6388 -0.100941 23.2934 0.302821 23.6972C0.706582 24.1009 1.36121 24.1009 1.76497 23.6972L12 13.4621L22.235 23.6972C22.6388 24.1009 23.2934 24.1009 23.6972 23.6972C24.1009 23.2934 24.1009 22.6388 23.6972 22.235L13.4621 12L23.6972 1.76497Z"
+                      fill="#47655D"></path>
             </svg>
         </div>
     </div>
@@ -113,7 +114,8 @@
 
 <div class="row">
     <div class="col-md-1 left-aside">
-        <div class="social-networks d-flex flex-column justify-content-center align-items-center" id="asideSocialNetworks">
+        <div class="social-networks d-flex flex-column justify-content-center align-items-center"
+             id="asideSocialNetworks">
             <a href="">
                 <div class="social-inst">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
@@ -133,12 +135,12 @@
     <div class="col-md-11 main-content">
         <section class="contacts">
             <div class="container">
-                <div class="row contacts-wrap">
+                <div class="row contacts-wrap d-flex justify-content-between flex-wrap">
                     <div class="col-md-5 contacts-wrap-leftside d-flex flex-column">
                         <div class="contacts-wrap-leftside-head">
                             <h1>Контакты</h1>
                         </div>
-                        <div class="contacts-wrap-leftside-body d-flex align-items-center">
+                        <div class="contacts-wrap-leftside-body d-flex align-items-start justify-content-between flex-wrap">
                             <div class="contacts-wrap-leftside-body-call d-flex flex-column">
                                 <p>Звоните</p>
                                 <a href="tel:0442908155">(044) 290 81 55</a>
@@ -151,7 +153,7 @@
                         <div class="contacts-wrap-leftside-footer">
                             <span>Приходите</span>
                             <p>вул. Виборгская, 84, 04107, Киев Украина</p>
-                            <p>Пн-Пт: 9:00-18:00  Сб-Вс - выходной</p>
+                            <p>Пн-Пт: 9:00-18:00 Сб-Вс - выходной</p>
                             <div class="contacts-wrap-leftside-footer-icons d-flex justify-content-start align-items-center">
                                 <a href="">
                                     <div class="social-fb">
@@ -169,11 +171,33 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="contacts-wrap-rightside">
-
-                        </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-6">
+                        <div class="contacts-wrap-rightside">
+                            <div class="contacts-wrap-rightside-head">
+                                <p>Оставьте заявку и наши менеджеры свяжутся с вами в самое ближайшее время и
+                                    предоставят профессиональную консультацию и помогут оформить заказ.</p>
+                            </div>
+                            <div class="contacts-wrap-rightside-body">
+                                <form action="">
+                                   <div class="input-name-tel d-flex justify-content-between align-items-center">
+                                       <label>
+                                           <input type="text" placeholder="Имя" required>
+                                       </label>
+                                       <label>
+                                           <input id="phone" type="tel" placeholder="Телефон" required data-inputmask="'mask': '9999 9999 9999 9999'">
+                                       </label>
+                                   </div>
+                                    <label>
+                                        <input id="email" type="email" placeholder="E-mail" required>
+                                    </label>
+                                    <label>
+                                        <input type="text" placeholder="Сообщение">
+                                    </label>
+                                        <button>Отправить</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -245,6 +269,7 @@
 </footer>
 
 <script src="script/jquery-3.6.0.min.js"></script>
+<script src="/script/jquery.maskedinput.min.js"></script>
 <script src="script/bootstrap.min.js"></script>
 <script src="script/slick.min.js"></script>
 <script src="script/script.js"></script>

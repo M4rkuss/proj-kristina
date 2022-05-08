@@ -1073,25 +1073,26 @@ footer {
   .contacts-wrap-leftside {
     .contacts-wrap-leftside-body {
       margin-bottom: 25px;
+
       p {
         text-transform: uppercase;
         color: $main-text;
         margin-bottom: 0;
         font-size: 18px;
       }
+
       a {
         text-transform: none;
         color: $main-blue;
         font-size: 21px;
         font-weight: 300;
       }
-      .contacts-wrap-leftside-body-write {
-        margin-left: 50px;
-      }
     }
+
     .contacts-wrap-leftside-footer {
       .contacts-wrap-leftside-footer-icons {
         margin-top: 30px;
+
         .social-inst, .social-fb {
           width: 40px;
           height: 40px;
@@ -1112,15 +1113,82 @@ footer {
           height: 20px;
         }
       }
+
       span {
         font-size: 18px;
         text-transform: uppercase;
         color: #323232;
       }
+
       p {
         color: #323232;
         margin-bottom: 0;
         font-size: 14px;
+      }
+    }
+  }
+
+  .contacts-wrap-rightside {
+    .contacts-wrap-rightside-body {
+      margin-top: 30px;
+
+      p {
+        color: $main-text;
+      }
+
+      .input-name-tel {
+        label {
+          width: 45%;
+        }
+      }
+
+      label {
+        margin-bottom: 20px;
+        width: 100%;
+
+        &:nth-child(3) {
+          width: 100%;
+          input {
+            padding-top: 50px;
+            &::placeholder {
+              transform: translateY(-50px);
+            }
+          }
+        }
+
+        input {
+          width: 100%;
+          border-top: none;
+          border-left: none;
+          border-right: none;
+          border-bottom: 0.5px solid #d5d5d5;
+          color: $main-text;
+          outline: none;
+          padding-top: 15px;
+
+          &::placeholder {
+            color: $main-text;
+            font-size: 14px;
+            transform: translateY(-10px);
+          }
+
+        }
+      }
+
+      button {
+        margin-top: 15px;
+        text-transform: uppercase;
+        border: none;
+        font-size: 13px;
+        padding: 10px 45px;
+        background: #014b94;
+        color: #fff;
+        border-radius: 30px;
+        transition: 0.3s ease;
+
+        &:hover {
+          background: #0d559f;
+        }
       }
     }
   }

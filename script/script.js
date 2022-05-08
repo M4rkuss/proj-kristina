@@ -89,7 +89,6 @@ window.addEventListener('scroll', function() {
     html = document.documentElement,
     height = Math.max( body.scrollHeight, body.offsetHeight,
     html.clientHeight, html.scrollHeight, html.offsetHeight );
-  console.log(height)
 
   if (pageYOffset > height - 1417 && pageYOffset <= height - 1117) {
     document.getElementById("asideSocialNetworks").classList.add('aside-position')
@@ -104,3 +103,8 @@ document.getElementById('menu-burger').onclick = function () {
 document.getElementById('close-burger-icon').onclick = function () {
   document.getElementById('nav-menu').classList.remove('opened')
 }
+
+// input mask
+$(function(){
+  $("#phone").mask("+38(999) 999-99-99");
+});

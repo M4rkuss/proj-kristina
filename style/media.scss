@@ -50,6 +50,12 @@ $main-bg: #f4f7fc;
   }
 }
 
+@media (min-width: 750px) and (max-width: 950px) {
+  .main-content {
+    flex: 0 0 100% !important;
+  }
+}
+
 @media screen and (max-width: 950px) {
   .left-aside {
     display: none !important;
@@ -114,6 +120,9 @@ $main-bg: #f4f7fc;
 }
 
 @media screen and (max-width: 770px) {
+  .contacts-wrap-rightside-head {
+    margin-top: 20px;
+  }
   header {
     .col-md-1 {
       max-width: 30% !important;
@@ -174,6 +183,9 @@ $main-bg: #f4f7fc;
 }
 
 @media screen and (max-width: 500px) {
+  .contacts {
+    padding: 40px !important;
+  }
   header {
     position: static !important;
     .col-md-1 {
