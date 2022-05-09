@@ -40,6 +40,17 @@
   footer {
     padding: 20px !important;
   }
+
+  .produkciya-wrap .col-md-2 {
+    max-width: 100%;
+    text-align: center;
+    flex: 0 0 100%;
+  }
+  .produkciya-wrap .col-md-9 {
+    margin-top: 20px;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 }
 @media (min-width: 750px) and (max-width: 950px) {
   .main-content {
@@ -153,6 +164,11 @@
     width: 70px !important;
     height: 70px !important;
   }
+
+  .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item {
+    width: 170px;
+    height: 240px;
+  }
 }
 @media screen and (max-width: 500px) {
   .contacts {
@@ -232,6 +248,14 @@
 
   .footer {
     padding: 40px !important;
+  }
+
+  .produkciya {
+    padding: 20px !important;
+  }
+  .produkciya .produkciya-wrap-rightside-item {
+    width: 140px !important;
+    height: 230px !important;
   }
 }
 @media screen and (max-width: 380px) {
