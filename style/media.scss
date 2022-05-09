@@ -202,6 +202,28 @@ $main-bg: #f4f7fc;
       }
     }
   }
+  .article-head-leftside {
+    flex-direction: column;
+    h1 {
+      margin-left: 0 !important;
+      font-size: 30px;
+    }
+  }
+  .article-head-rightside {
+    flex-direction: column-reverse;
+    align-items: end;
+    span {
+      margin-right: 0 !important;
+    }
+  }
+  .article-footer {
+    .col-md-3{
+      flex-direction: row !important;
+      .social-inst {
+        margin-left: 15px;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -281,6 +303,24 @@ $main-bg: #f4f7fc;
     .produkciya-wrap-rightside-item {
       width: 140px !important;
       height: 230px !important;
+    }
+  }
+  .article {
+    padding: 20px !important;
+  }
+  .article-head-leftside {
+    h1 {
+      font-size: 18px;
+    }
+  }
+  .article-head-rightside {
+    span {
+      font-size: 13px;
+    }
+  }
+  .article-footer-navigation {
+    span {
+      font-size: 12px;
     }
   }
 }

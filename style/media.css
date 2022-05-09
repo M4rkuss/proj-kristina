@@ -169,6 +169,29 @@
     width: 170px;
     height: 240px;
   }
+
+  .article-head-leftside {
+    flex-direction: column;
+  }
+  .article-head-leftside h1 {
+    margin-left: 0 !important;
+    font-size: 30px;
+  }
+
+  .article-head-rightside {
+    flex-direction: column-reverse;
+    align-items: end;
+  }
+  .article-head-rightside span {
+    margin-right: 0 !important;
+  }
+
+  .article-footer .col-md-3 {
+    flex-direction: row !important;
+  }
+  .article-footer .col-md-3 .social-inst {
+    margin-left: 15px;
+  }
 }
 @media screen and (max-width: 500px) {
   .contacts {
@@ -256,6 +279,22 @@
   .produkciya .produkciya-wrap-rightside-item {
     width: 140px !important;
     height: 230px !important;
+  }
+
+  .article {
+    padding: 20px !important;
+  }
+
+  .article-head-leftside h1 {
+    font-size: 18px;
+  }
+
+  .article-head-rightside span {
+    font-size: 13px;
+  }
+
+  .article-footer-navigation span {
+    font-size: 12px;
   }
 }
 @media screen and (max-width: 380px) {
