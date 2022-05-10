@@ -224,6 +224,35 @@ $main-bg: #f4f7fc;
       }
     }
   }
+  .product {
+    padding: 20px !important;
+  }
+  .product-wrap-rightside-footer {
+    table {
+      td:first-child {
+        font-size: 15px;
+      }
+      th,td {
+        width: 10%;
+        padding: 0 !important;
+      }
+      thead {
+        th {
+          font-size: 8px !important;
+          span {
+            font-size: 16px !important;
+          }
+        }
+      }
+      tbody {
+        td {
+          word-break: break-word;
+          padding-bottom: 30px;
+          font-size: 8px !important;
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -305,6 +334,17 @@ $main-bg: #f4f7fc;
       height: 230px !important;
     }
   }
+  .produkciya-info {
+    padding: 20px !important;
+  }
+  .produkciya-info-footer {
+    .col-md-9 {
+      flex-direction: column !important;
+      .produkciya-info-footer-item {
+        width: 100% !important;
+      }
+    }
+  }
   .article {
     padding: 20px !important;
   }
@@ -322,6 +362,16 @@ $main-bg: #f4f7fc;
     span {
       font-size: 12px;
     }
+  }
+  .product-wrap-rightside-head, .product-wrap-rightside-end {
+    flex-direction: column;
+    align-items: start !important;
+    .product-wrap-rightside-head-right, .product-wrap-rightside-end-buttons {
+      margin-top: 40px;
+    }
+  }
+  .product-wrap-rightside-end {
+    align-items: center !important;
   }
 }
 

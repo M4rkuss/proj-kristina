@@ -519,6 +519,10 @@ header .header-wrap-right-side .header-btn-order a:hover {
   width: 100%;
   height: 90%;
 }
+.top-sales .top-sales-body .top-sales-body-slider-item .top-sales-body-slider-item-head .top-sales-body-slider-item-head-img img {
+  width: 100%;
+  height: 100%;
+}
 .top-sales .top-sales-body .top-sales-body-slider-item .top-sales-body-slider-item-head .item-first {
   height: 60%;
 }
@@ -723,8 +727,11 @@ header .header-wrap-right-side .header-btn-order a:hover {
 }
 
 .map {
-  height: 500px;
-  background: #ebebeb;
+  height: 550px;
+}
+.map #map {
+  width: 100%;
+  height: 550px;
 }
 
 .footer {
@@ -972,6 +979,10 @@ footer p {
   height: 90%;
   background: #014b94;
 }
+.produkciya .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item .produkciya-img img {
+  width: 100%;
+  height: 100%;
+}
 .produkciya .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item p {
   text-transform: uppercase;
   color: #36373b;
@@ -1169,6 +1180,10 @@ footer p {
   height: 90%;
   background: #014b94;
 }
+.catalog .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item .produkciya-img img {
+  width: 100%;
+  height: 100%;
+}
 .catalog .produkciya-wrap .produkciya-wrap-rightside .produkciya-wrap-rightside-item p {
   text-transform: uppercase;
   color: #36373b;
@@ -1232,6 +1247,11 @@ footer p {
   width: 100%;
   height: 400px;
   background: #014b94;
+}
+.produkciya-info .produkciya-info-more-rightside img {
+  width: 100%;
+  height: 400px;
+  opacity: 0.2;
 }
 .produkciya-info .produkciya-info-footer {
   margin-top: 50px;

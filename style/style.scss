@@ -638,6 +638,10 @@ header {
           background: $main-blue;
           width: 100%;
           height: 90%;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
 
         .item-first {
@@ -896,8 +900,11 @@ header {
 }
 
 .map {
-  height: 500px;
-  background: #ebebeb;
+  height: 550px;
+  #map {
+    width: 100%;
+    height: 550px;
+  }
 }
 
 .footer {
@@ -1219,6 +1226,10 @@ footer {
           width: 100%;
           height: 90%;
           background: $main-blue;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
 
         p {
@@ -1461,6 +1472,10 @@ footer {
           width: 100%;
           height: 90%;
           background: $main-blue;
+          img {
+            width: 100%;
+            height: 100%;
+          }
         }
 
         p {
@@ -1548,6 +1563,11 @@ footer {
     width: 100%;
     height: 400px;
     background: $main-blue;
+    img {
+      width: 100%;
+      height: 400px;
+      opacity: .2;
+    }
   }
   .produkciya-info-footer {
     margin-top: 50px;

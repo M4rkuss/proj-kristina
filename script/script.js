@@ -116,3 +116,155 @@ document.getElementById('close-burger-icon').onclick = function () {
 $(function(){
   $("#phone").mask("+38(999) 999-99-99");
 });
+
+// google maps
+function initMap() {
+  var pos = {lat: 50.45087802610471, lng: 30.43084677683045}
+  var opt = {
+    center: pos,
+    zoom: 10,
+    mapTypeControl: false,
+    disableDefaultUI: true
+  }
+
+  var map = new google.maps.Map(document.getElementById('map'), opt)
+
+  var marker = new google.maps.Marker({
+    position: pos,
+    map: map
+  })
+  const styledMapType = new google.maps.StyledMapType(
+    [
+      { elementType: "geometry", stylers: [{ color: "#ebebeb" }] },
+      { elementType: "labels.text.fill", stylers: [{ color: "#323232" }] },
+      { elementType: "labels.text.stroke", stylers: [{ color: "#fff" }] },
+      {
+        featureType: "administrative",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#ebebeb" }],
+      },
+      {
+        featureType: "administrative.land_parcel",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#ebebeb" }],
+      },
+      {
+        featureType: "administrative.land_parcel",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#ebebeb" }],
+      },
+      {
+        featureType: "landscape.natural",
+        elementType: "geometry",
+        stylers: [{ color: "#ebebeb" }],
+      },
+      {
+        featureType: "poi",
+        elementType: "geometry",
+        stylers: [{ color: "#ebebeb" }],
+      },
+      {
+        featureType: "poi",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#93817c" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#ebebeb" }],
+      },
+      {
+        featureType: "poi.park",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#323232" }],
+      },
+      {
+        featureType: "road",
+        elementType: "geometry",
+        stylers: [{ color: "#5ba1f6" }],
+      },
+      {
+        featureType: "road.arterial",
+        elementType: "geometry",
+        stylers: [{ color: "#5ba1f6" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry",
+        stylers: [{ color: "#3f8de2" }],
+      },
+      {
+        featureType: "road.highway",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#fff" }],
+      },
+      {
+        featureType: "road.highway.controlled_access",
+        elementType: "geometry",
+        stylers: [{ color: "#5ba1f6" }],
+      },
+      {
+        featureType: "road.highway.controlled_access",
+        elementType: "geometry.stroke",
+        stylers: [{ color: "#5ba1f6" }],
+      },
+      {
+        featureType: "road.local",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#806b63" }],
+      },
+      {
+        featureType: "transit.line",
+        elementType: "geometry",
+        stylers: [{ color: "#5ba1f6" }],
+      },
+      {
+        featureType: "transit.line",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#5ba1f6" }],
+      },
+      {
+        featureType: "transit.line",
+        elementType: "labels.text.stroke",
+        stylers: [{ color: "#ebe3cd" }],
+      },
+      {
+        featureType: "transit.station",
+        elementType: "geometry",
+        stylers: [{ color: "#5ba1f6" }],
+      },
+      {
+        featureType: "water",
+        elementType: "geometry.fill",
+        stylers: [{ color: "#ffffff" }],
+      },
+      {
+        elementType: "labels.icon",
+        stylers: [{ visibility: "off" }],
+      },
+      {
+        "featureType": "poi",
+        "elementType": "all",
+        "stylers": [
+          {
+            "visibility": "off"
+          }
+        ]
+      },
+      {
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#323232" }],
+      },
+      {
+        featureType: "water",
+        elementType: "labels.text.fill",
+        stylers: [{ color: "#92998d" }],
+      },
+    ],
+    { name: "Styled Map" }
+  );
+  map.mapTypes.set("styled_map", styledMapType);
+  map.setMapTypeId("styled_map");
+}
+
+window.initMap = initMap;
