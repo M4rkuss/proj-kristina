@@ -1081,7 +1081,7 @@ footer p {
 .catalog .catalog-banner .catalog-arrows #catalogArrowLeft:before {
   content: "(";
   position: absolute;
-  top: -13px;
+  top: 3px;
   left: -10px;
   margin: 0 auto;
   width: 10px;
@@ -1100,7 +1100,7 @@ footer p {
 .catalog .catalog-banner .catalog-arrows #catalogArrowRight:before {
   content: ")";
   position: absolute;
-  top: -13px;
+  top: 3px;
   right: -10px;
   margin: 0 auto;
   width: 10px;
