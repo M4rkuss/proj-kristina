@@ -120,18 +120,20 @@ $(function(){
 // google maps
 function initMap() {
   var pos = {lat: 50.45087802610471, lng: 30.43084677683045}
+  var markerImage = '/img/location-pin.png'
   var opt = {
     center: pos,
     zoom: 10,
     mapTypeControl: false,
-    disableDefaultUI: true
+    disableDefaultUI: true,
   }
 
   var map = new google.maps.Map(document.getElementById('map'), opt)
 
   var marker = new google.maps.Marker({
     position: pos,
-    map: map
+    map: map,
+    icon: markerImage
   })
   const styledMapType = new google.maps.StyledMapType(
     [
