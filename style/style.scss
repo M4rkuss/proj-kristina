@@ -16,6 +16,8 @@ $main-bg: #f4f7fc;
   font-family: "Montserrat", sans-serif;
 }
 
+.disclaimer {display: none !important;}
+
 h1, h2, h3, h4, p, span {
   font-weight: 300;
 }
@@ -41,24 +43,46 @@ a {
   padding: 0 !important;
 }
 
+.col-md-1 {
+  max-width: 10% !important;
+  flex: 0 0 10% !important;
+}
+
+.under-header {
+  .col-md-11 {
+    max-width: 90%;
+    flex: 0 0 90%;
+  }
+}
+
 header {
-  position: sticky;
-  top: 0;
-  z-index: 999;
 
   .col-md-1 {
     border-bottom: 0.5px solid #d5d5d5;
 
     .header-logo {
-      height: 140px;
+      height: 130px;
       background: $main-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        width: 90%;
+      }
     }
   }
 
   .col-md-11 {
+    max-width: 90%;
+    flex: 0 0 90%;
     .header-wrap-left-side {
       width: 70%;
-      height: 140px;
+      height: 130px;
 
 
       .header-navigation {
@@ -109,7 +133,7 @@ header {
                 position: absolute;
                 bottom: 10px;
                 left: 10px;
-                color: #cdcdcd;
+                color: #323232;
                 transition: .4s ease;
               }
 
@@ -135,7 +159,7 @@ header {
 
   .header-wrap-right-side {
     width: 30%;
-    height: 140px;
+    height: 130px;
     border-left: 0.5px solid #d5d5d5;
     border-bottom: 0.5px solid #d5d5d5;
     background: #fff;
@@ -206,8 +230,8 @@ header {
 
     svg {
       fill: $main-blue;
-      width: 20px;
-      height: 20px;
+      width: 15px;
+      height: 15px;
     }
   }
 
@@ -227,12 +251,20 @@ header {
 
     .col-md-7 {
       background: #fff;
-      padding-bottom: 40px;
 
       .hero-head {
         padding: 60px 0 0 60px;
 
+        span {
+          svg {
+            transform: rotate(90deg);
+            width: 40px;
+            fill: #323232;
+          }
+        }
+
         h1 {
+          margin-top: 35px;
           font-weight: 300;
           color: $main-text;
         }
@@ -264,6 +296,7 @@ header {
 
         p {
           color: $main-text;
+          font-size: 12px;
         }
       }
     }
@@ -271,6 +304,7 @@ header {
     .hero-rightside {
       position: relative;
       overflow: hidden;
+      height: 100%;
 
       .hero-slider {
         width: 100%;
@@ -279,12 +313,13 @@ header {
         .hero-slider-item {
           img {
             width: 100%;
-            height: 600px;
+            height: 650px;
           }
         }
       }
 
       .hero-slider-arrows {
+        width: 80% !important;
         padding: 0 30px;
         position: absolute;
         z-index: 10;
@@ -308,33 +343,38 @@ header {
 
         #heroArrowLeft {
           position: relative;
+          svg {
+            position: relative;
+            z-index: 5;
+          }
 
           &:before {
-            content: '(';
+            content: url('/img/half-circle.png');
             position: absolute;
-            top: 3px;
-            left: -10px;
+            z-index: 1;
+            top: 1px;
+            right: 8px;
             margin: 0 auto;
-            width: 10px;
-            height: 10px;
-            transform: scale(2);
-            color: #fff;
+            transform: rotate(-90deg);
           }
         }
 
         #heroArrowRight {
           position: relative;
+          svg{
+            position: relative;
+            z-index: 5;
+            transform: rotate(180deg);
+          }
 
           &:before {
-            content: ')';
+            content: url('/img/half-circle.png');
             position: absolute;
-            top: 3px;
-            right: -20px;
+            z-index: 1;
+            top: 15px;
+            left: 8px;
             margin: 0 auto;
-            width: 10px;
-            height: 10px;
-            transform: scale(2);
-            color: #fff;
+            transform: rotate(90deg);
           }
         }
       }
@@ -498,7 +538,7 @@ header {
         transition: .3s;
 
         img {
-          width: 100%;
+          width: 70%;
         }
 
         &:hover {
@@ -509,7 +549,7 @@ header {
 
     .our-clients-wrap-rightside {
       padding: 50px 90px 0 90px;
-      margin-top: 100px;
+      margin-top: 50px;
 
       .our-clients-slider-item {
         display: flex;
@@ -908,12 +948,18 @@ header {
 }
 
 .footer {
-  padding: 50px 50px 50px 120px;
+  padding: 50px 50px 50px 130px;
   border-top: 0.5px solid #d5d5d5;
 
   .footer-logo {
+    width: 160px;
+    height: 160px;
+    background: $main-blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     img {
-      width: 250px;
+      width: 90%;
     }
   }
 
@@ -1729,43 +1775,14 @@ footer {
     }
     .product-wrap-rightside-footer {
       table {
-        width: 100%;
-        font-weight: 300;
-        tr {
-          border-top: 0.5px solid #d5d5d5;
+        color: #323232;
+        td, tr, th {
+          font-weight: 300;
         }
-        th:first-child, td:first-child {
-          width: 30%;
-        }
-        td:first-child {
-          font-size: 15px;
-        }
-        th,td {
-          width: 10%;
-          padding: 10px;
-        }
-        th:not(:first-child) {
-          text-align: center;
-        }
-        td:not(:first-child) {
-          text-align: center;
-        }
-        thead {
-          th {
-            font-weight: 300;
-            font-size: 12px;
-            span {
-              font-size: 26px;
-            }
-          }
-        }
-        tbody {
-          td {
-            padding-bottom: 30px;
-            font-size: 12px;
-          }
-          tr:last-child {
-            border-bottom: 0.5px solid #d5d5d5;
+        th:first-child {
+          width: 200px;
+          span {
+            font-size: 25px;
           }
         }
       }

@@ -72,11 +72,12 @@
   }
   header .col-md-1 {
     max-width: 20% !important;
-    flex-basis: 30%;
+    flex: 0 0 20% !important;
   }
   header .col-md-11 {
     background: #fff;
-    flex-basis: 80%;
+    max-width: 80% !important;
+    flex: 0 0 80% !important;
   }
   header .col-md-11 .header-wrap-left-side {
     display: none !important;
@@ -102,6 +103,15 @@
     font-weight: 500;
   }
 
+  .under-header .col-md-11 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  .portfolio-rightside h3 {
+    font-size: 28px !important;
+  }
+
   .hero-head, .hero-footer {
     padding: 30px 0 0 30px !important;
   }
@@ -124,10 +134,11 @@
 
   header .col-md-1 {
     max-width: 30% !important;
-    flex-basis: 40%;
+    flex: 0 0 30% !important;
   }
   header .col-md-11 {
-    flex-basis: 70%;
+    max-width: 70% !important;
+    flex: 0 0 70% !important;
   }
 
   .hero-footer .col-md-4 {
@@ -196,27 +207,17 @@
   .product {
     padding: 20px !important;
   }
-
-  .product-wrap-rightside-footer table td:first-child {
-    font-size: 15px;
-  }
-  .product-wrap-rightside-footer table th, .product-wrap-rightside-footer table td {
-    width: 10%;
-    padding: 0 !important;
-  }
-  .product-wrap-rightside-footer table thead th {
-    font-size: 8px !important;
-  }
-  .product-wrap-rightside-footer table thead th span {
-    font-size: 16px !important;
-  }
-  .product-wrap-rightside-footer table tbody td {
-    word-break: break-word;
-    padding-bottom: 30px;
-    font-size: 8px !important;
-  }
 }
 @media screen and (max-width: 500px) {
+  header .col-md-1 {
+    max-width: 40% !important;
+    flex: 0 0 40% !important;
+  }
+  header .col-md-11 {
+    max-width: 60% !important;
+    flex: 0 0 60% !important;
+  }
+
   .contacts {
     padding: 40px !important;
   }
