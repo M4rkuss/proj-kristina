@@ -179,9 +179,11 @@ header {
     padding-left: 60px;
 
     .header-lang {
+      margin-left: 15px;
       .change-lang {
         span {
           color: #cdcdcd;
+          font-size: 14px;
           transition: .3s ease;
 
           &:first-child {
@@ -203,7 +205,7 @@ header {
       a {
         font-weight: 300;
         font-size: 13px;
-        padding: 13px 45px;
+        padding: 14px 50px;
         background: $main-blue;
         color: #fff;
         border-radius: 30px;
@@ -226,7 +228,7 @@ header {
 
   .social-networks {
     position: fixed;
-    bottom: 50px;
+    bottom: -30px;
     margin: 0 auto;
     transition: .4s ease;
 
@@ -261,8 +263,15 @@ header {
   margin: 0 auto;
 
   .hero-wrap {
+    .col-md-5 {
+      max-width: 46%;
+      flex: 0 0 46%;
+    }
+
     .col-md-7 {
       background: #fff;
+      max-width: 54%;
+      flex: 0 0 54%;
 
       .hero-head {
         padding: 80px 0 0 80px;
@@ -302,12 +311,12 @@ header {
 
       .hero-footer {
         padding: 40px 0 0 80px;
-        margin-top: 100px;
+        margin-top: 70px;
         border-top: 0.5px solid #eff2f9;
 
         p {
           color: $main-text;
-          font-size: 12px;
+          font-size: 11px;
           margin-bottom: 0;
         }
       }
@@ -425,17 +434,22 @@ header {
 }
 
 .polygraphy-in-kiev {
-  padding: 50px 0 50px 80px;
+  padding: 50px 0 80px 80px;
   background: #F5F7FC;
   position: relative;
   z-index: 2;
   .container {
     max-width: 100% !important;
   }
+  .row {
+    align-items: start;
+  }
 
   .col-md-5 {
+    margin-top: 15px;
     h2 {
       color: $main-text;
+      font-size: 35px;
     }
 
     span {
@@ -445,19 +459,36 @@ header {
 
   .col-md-7 {
     .col-md-4 p {
+      display: flex;
+      align-items: center;
       &:first-child {
-        font-size: 60px;
-        font-weight: 400;
+        font-size: 65px;
+        font-weight: 300;
         color: $main-blue;
+        margin-bottom: 0;
       }
 
       color: $main-text;
+      span {
+        font-size: 23px;
+        font-weight: 500;
+        margin-left: 12px;
+        margin-top: 5px;
+      }
     }
   }
 }
 
 .portfolio {
   background: #F5F7FC;
+  .col-md-7 {
+    max-width: 54%;
+    flex: 0 0 54%;
+  }
+  .col-md-5 {
+    max-width: 46%;
+    flex: 0 0 46%;
+  }
 
   .row {
     max-width: 2560px;
@@ -468,8 +499,8 @@ header {
     padding: 100px 30px 80px 80px;
 
     h2 {
-      font-size: 40px;
-      margin-bottom: 100px;
+      font-size: 47px;
+      margin-bottom: 70px;
       color: $main-text;
     }
 
@@ -479,7 +510,7 @@ header {
     }
 
     p {
-      width: 60%;
+      width: 80%;
       color: $main-text;
     }
 
@@ -491,8 +522,10 @@ header {
     }
 
     .portfolio-leftside-footer {
+      margin-top: 10px;
       span {
         color: $main-blue;
+        font-size: 13px;
       }
 
       .portfolio-slider-arrow-left {
@@ -539,8 +572,13 @@ header {
 }
 
 .our-clients {
-  padding: 50px 80px;
+  padding: 50px 110px 50px 80px;
   background: #F5F7FC;
+
+  h2 {
+    font-size: 40px;
+    color: #323232;
+  }
 
   .our-clients-wrap {
     background: #fff;
@@ -560,7 +598,7 @@ header {
         transition: .3s;
 
         img {
-          width: 70%;
+          width: 80%;
         }
 
         &:hover {
@@ -581,15 +619,25 @@ header {
         h3 {
           color: $main-text;
           text-align: center;
+          font-size: 22px;
         }
 
         p {
           color: $main-text;
+          font-weight: 300;
+          font-size: 13px;
+          width: 90%;
+        }
+        span {
+          color: $main-text;
+          font-size: 11px;
+          font-weight: 300;
+          text-transform: uppercase;
         }
 
         .comment-icon {
-          width: 50px;
-          height: 50px;
+          width: 45px;
+          height: 45px;
           background: $main-blue;
           border-radius: 50%;
           display: flex;
@@ -597,7 +645,7 @@ header {
           align-items: center;
 
           img {
-            width: 30px;
+            width: 20px;
           }
         }
 
@@ -637,6 +685,7 @@ header {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      margin-top: 20px;
 
       li {
         background: $main-bg;
@@ -671,19 +720,27 @@ header {
     color: $main-text;
 
     .top-sales-head-leftside {
-      width: 30%;
+      width: 40%;
+      h2 {
+        font-size: 36px;
+      }
     }
 
     .top-sales-head-rightside {
       width: 50%;
+      p {
+        font-size: 14px;
+        margin-left: 60px;
+      }
     }
   }
 
   .top-sales-body {
+    margin-top: 70px;
     .top-sales-body-slider-item {
-      width: 200px;
-      height: 400px;
-      margin-right: 50px;
+      width: 220px;
+      height: 360px;
+      margin-right: 45px;
 
       .top-sales-body-slider-item-head {
         width: 100%;
@@ -693,7 +750,7 @@ header {
           margin-top: 15px;
           text-transform: uppercase;
           color: $main-text;
-          font-size: 15px;
+          font-size: 12px;
         }
 
         .top-sales-body-slider-item-head-img {
@@ -721,7 +778,7 @@ header {
 
       .top-sales-body-slider-item-footer {
         span {
-          font-size: 13px;
+          font-size: 11px;
         }
       }
     }
@@ -806,6 +863,7 @@ header {
   .stages-head {
     h2 {
       color: $main-text;
+      font-size: 47px;
     }
   }
 
@@ -813,7 +871,7 @@ header {
     width: 100%;
 
     .stages-body-item {
-      width: 11%;
+      width: 15%;
 
       span {
         color: $main-blue;
@@ -825,18 +883,19 @@ header {
         color: $main-text;
         margin-top: 30px;
         text-transform: uppercase;
+        font-size: 17px;
       }
 
       svg {
         fill: $main-blue;
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
         margin: 0 auto;
       }
     }
 
     .stages-body-item-arrow {
-      margin-top: -40px;
+      margin-top: 50px;
 
       svg {
         fill: $main-blue;
@@ -961,20 +1020,20 @@ header {
 }
 
 .map {
-  height: 550px;
+  height: 450px;
   #map {
     width: 100%;
-    height: 550px;
+    height: 450px;
   }
 }
 
 .footer {
-  padding: 60px 50px 50px 140px;
+  padding: 60px 50px 100px 125px;
   border-top: 0.5px solid #eff2f9;
 
   .footer-logo {
-    width: 140px;
-    height: 140px;
+    width: 130px;
+    height: 130px;
     background: $main-blue;
     display: flex;
     justify-content: center;
@@ -986,7 +1045,7 @@ header {
 
   span {
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 13px;
     color: $main-text;
   }
 
@@ -999,7 +1058,7 @@ header {
     margin-bottom: 0px !important;
     li {
       margin-bottom: 9px;
-      font-size: 12px;
+      font-size: 11px;
       font-weight: 300;
       text-transform: none;
       color: $main-text;
@@ -1008,7 +1067,7 @@ header {
       }
 
       a {
-        font-size: 12px;
+        font-size: 11px;
         font-weight: 300;
         text-transform: none;
         color: $main-text;
@@ -1017,7 +1076,7 @@ header {
   }
   .footer-contacts {
     li,a {
-      font-size: 12px;
+      font-size: 11px;
     }
     li {
       margin-bottom: 3px;
@@ -1054,13 +1113,14 @@ header {
 }
 
 footer {
-  font-size: 14px;
+  font-size: 10px;
   background: $main-blue;
   color: #fff;
   padding: 20px 50px 20px 120px;
 
   p {
     margin-bottom: 0;
+    font-weight: 400;
   }
 }
 
@@ -1154,23 +1214,23 @@ footer {
 // contact page style
 
 .contacts {
-  padding: 50px;
+  padding: 40px 80px;
 
   h1 {
     font-size: 50px;
     color: $main-text;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
   }
 
   .contacts-wrap-leftside {
     .contacts-wrap-leftside-body {
-      margin-bottom: 25px;
+      margin-bottom: 20px;
 
       p {
         text-transform: uppercase;
         color: $main-text;
         margin-bottom: 0;
-        font-size: 18px;
+        font-size: 15px;
       }
 
       a {
@@ -1179,15 +1239,19 @@ footer {
         font-size: 21px;
         font-weight: 300;
       }
+
+      .contacts-wrap-leftside-body-write {
+        margin-right: 50px;
+      }
     }
 
     .contacts-wrap-leftside-footer {
       .contacts-wrap-leftside-footer-icons {
-        margin-top: 30px;
+        margin-top: 22px;
 
         .social-inst, .social-fb {
-          width: 40px;
-          height: 40px;
+          width: 33px;
+          height: 33px;
           background: #36373b;
           border-radius: 50%;
           display: flex;
@@ -1201,13 +1265,13 @@ footer {
 
         svg {
           fill: #fff;
-          width: 20px;
-          height: 20px;
+          width: 18px;
+          height: 18px;
         }
       }
 
       span {
-        font-size: 18px;
+        font-size: 15px;
         text-transform: uppercase;
         color: #323232;
       }
@@ -1215,14 +1279,23 @@ footer {
       p {
         color: #323232;
         margin-bottom: 0;
-        font-size: 14px;
+        font-size: 12px;
       }
     }
   }
 
   .contacts-wrap-rightside {
+    margin-left: -55px;
+    padding: 10px;
+    .contacts-wrap-rightside-head {
+      p {
+        color: $main-text;
+        font-size: 12px;
+        margin-bottom: 0 !important;
+      }
+    }
     .contacts-wrap-rightside-body {
-      margin-top: 30px;
+      margin-top: 10px;
 
       p {
         color: $main-text;
@@ -1235,7 +1308,7 @@ footer {
       }
 
       label {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         width: 100%;
 
         &:nth-child(3) {
@@ -1262,7 +1335,8 @@ footer {
 
           &::placeholder {
             color: $main-text;
-            font-size: 14px;
+            font-size: 12px;
+            font-weight: 300;
             transform: translateY(-10px);
           }
 
@@ -1293,7 +1367,7 @@ footer {
 
 // produkciya page style
 .produkciya {
-  padding: 50px;
+  padding: 80px;
 
   .produkciya-wrap {
     .produkciya-wrap-leftside {
@@ -1384,7 +1458,7 @@ footer {
 }
 
 .produkciya-info {
-  padding: 50px;
+  padding: 80px;
   h2, p {
     color: $main-text;
   }
@@ -1422,6 +1496,7 @@ footer {
     padding: 50px;
     h1 {
       color: #fff;
+      font-size: 45px;
     }
     .catalog-arrows {
       margin-top: 70px;
@@ -1630,9 +1705,11 @@ footer {
 }
 
 .produkciya-info {
-  padding: 50px;
   h2, p {
     color: $main-text;
+  }
+  h2 {
+    font-size: 34px;
   }
   .col-md-3 {
     .produkciya-info-more {
@@ -1643,6 +1720,9 @@ footer {
         }
       }
     }
+  }
+  .col-md-9 {
+    margin-right: -20px;
   }
   .produkciya-info-more-rightside {
     width: 100%;
@@ -1656,6 +1736,14 @@ footer {
   }
   .produkciya-info-footer {
     margin-top: 50px;
+    .col-md-3 {
+      h3 {
+        width: 80%;
+      }
+    }
+    .col-md-9 {
+      margin-left: 20px;
+    }
     .produkciya-info-footer-item {
       width: 45%;
     }
@@ -1796,7 +1884,7 @@ footer {
       }
       ul {
         li {
-          font-size: 15px;
+          font-size: 13px;
           font-weight: 300;
           position: relative;
           &:before {
@@ -1817,6 +1905,7 @@ footer {
         color: #323232;
         td, tr, th {
           font-weight: 300;
+          font-size: 12px;
         }
         th:first-child {
           width: 200px;
@@ -1835,7 +1924,7 @@ footer {
       ul {
         width: 65%;
         li {
-          font-size: 15px;
+          font-size: 13px;
           font-weight: 300;
           position: relative;
           &:before {
@@ -1872,7 +1961,8 @@ footer {
         &:last-child {
           text-decoration: underline !important;
           color: #696969;
-          margin-top: 20px;
+          margin-top: 25px;
+          font-weight: 300;
         }
       }
     }

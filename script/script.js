@@ -98,6 +98,10 @@ window.addEventListener('scroll', function() {
     height = Math.max( body.scrollHeight, body.offsetHeight,
     html.clientHeight, html.scrollHeight, html.offsetHeight );
 
+  if (pageYOffset > 20 ) {
+    document.getElementById("asideSocialNetworks").style.bottom = "40px"
+  } else document.getElementById("asideSocialNetworks").style.bottom = "-30px"
+
   if (pageYOffset > height - 1417 && pageYOffset <= height - 1117) {
     document.getElementById("asideSocialNetworks").classList.add('aside-position')
   }

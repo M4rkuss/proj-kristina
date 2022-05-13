@@ -1,15 +1,50 @@
-@media screen and (max-width: 1300px) {
-  .header-wrap-right-side {
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center;
+@media screen and (min-width: 1520px) and (max-width: 2400px) {
+  .footer {
+    padding: 60px 50px 100px 115px !important;
   }
-  .header-wrap-right-side .header-lang {
-    margin-bottom: 15px;
+}
+@media screen and (min-width: 1480px) {
+  .produkciya-wrap-rightside .produkciya-wrap-rightside-item {
+    width: 300px !important;
+    height: 350px !important;
+  }
+}
+@media screen and (min-width: 1365px) {
+  .footer {
+    max-width: 1463px !important;
+    margin: 0 auto !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .our-clients .our-clients-wrap .our-clients-wrap-leftside-item img {
+    width: 100% !important;
+  }
+}
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+  .footer {
+    padding: 60px 50px 100px 115px !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .header-wrap-right-side {
+    padding-left: 0 !important;
+  }
+
+  .our-clients .our-clients-wrap-rightside {
+    margin-top: 0 !important;
+    padding: 30px 50px 0 50px !important;
   }
 }
 @media screen and (max-width: 1060px) {
+  .header-wrap-right-side {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-wrap-right-side .header-lang {
+    margin-bottom: -40px;
+  }
+
   .hero-leftside {
     padding-bottom: 0 !important;
   }
@@ -23,6 +58,14 @@
     justify-content: center;
     align-items: center;
   }
+  .our-clients-wrapper .col-md-4 {
+    max-width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .our-clients-wrap-leftside-item img {
+    width: 90% !important;
+  }
 
   .our-clients-wrap-rightside {
     margin-top: 0 !important;
@@ -34,7 +77,7 @@
   }
 
   .footer-logo img {
-    width: 180px !important;
+    width: 90% !important;
   }
 
   footer {
@@ -108,6 +151,34 @@
     flex: 0 0 100% !important;
   }
 
+  .polygraphy-in-kiev {
+    padding: 30px !important;
+  }
+
+  .portfolio-leftside {
+    padding: 30px !important;
+  }
+
+  .our-clients {
+    padding: 30px !important;
+  }
+
+  .top-sales {
+    padding: 30px !important;
+  }
+
+  .stages {
+    padding: 30px !important;
+  }
+
+  .produkciya {
+    padding: 30px !important;
+  }
+
+  .produkciya-info {
+    padding: 30px !important;
+  }
+
   .portfolio-rightside h3 {
     font-size: 28px !important;
   }
@@ -121,7 +192,7 @@
   }
 
   .footer {
-    padding: 50px !important;
+    padding: 30px !important;
   }
   .footer .footer-logo img {
     width: 130px !important;
@@ -141,8 +212,26 @@
     flex: 0 0 70% !important;
   }
 
+  .hero-wrap .col-md-5, .hero-wrap .col-md-7 {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+  .hero-wrap .hero-rightside {
+    margin-top: 30px;
+  }
+
   .hero-footer .col-md-4 {
     width: 33% !important;
+  }
+
+  .portfolio .row {
+    flex-direction: column-reverse;
+  }
+  .portfolio .portfolio-leftside, .portfolio .portfolio-rightside {
+    max-width: 100% !important;
+    width: 100% !important;
+    flex: 0 0 100% !important;
   }
 
   .our-clients-wrap-leftside .col-md-6 {
@@ -181,6 +270,10 @@
     height: 240px;
   }
 
+  .produkciya-info-footer .col-md-9 {
+    margin-left: 0 !important;
+  }
+
   .article-head-leftside {
     flex-direction: column;
   }
@@ -206,6 +299,13 @@
 
   .product {
     padding: 20px !important;
+  }
+
+  .footer .footer-contacts {
+    margin-top: 30px;
+  }
+  .footer .col-md-5 {
+    margin-top: 30px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -258,6 +358,17 @@
   .top-sales-head-rightside {
     width: 100% !important;
   }
+  .top-sales-head-rightside p {
+    margin-left: 0 !important;
+  }
+
+  .our-clients {
+    padding: 20px !important;
+  }
+  .our-clients .our-clients-wrapper .col-md-4 {
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
 
   .our-clients-wrap-rightside {
     padding: 50px 20px 0 20px !important;
@@ -288,7 +399,7 @@
     margin-left: -20px;
   }
   .stages-body .stages-body-item-arrow svg {
-    margin-left: 0 !important;
+    margin-left: 20px !important;
     transform: rotate(90deg);
     margin-top: 70px;
   }
