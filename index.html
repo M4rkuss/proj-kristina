@@ -55,12 +55,12 @@
     <header>
         <div class="row">
             <div class="col-md-1">
-                <div class="header-logo">
+                <div class="header-logo" id="header-logo">
                     <a href="./index.html"><img src="/img/logo.png" alt="Логотип"></a>
                 </div>
             </div>
             <div class="col-md-11 d-flex">
-                <div class="header-wrap-left-side d-flex justify-content-between">
+                <div class="header-wrap-left-side d-flex justify-content-between" id="header-wrap-left-side">
                     <div class="header-navigation">
                         <nav>
                             <ul>
@@ -88,7 +88,7 @@
                         </nav>
                     </div>
                 </div>
-                <div class="header-wrap-right-side">
+                <div class="header-wrap-right-side" id="header-wrap-right-side">
                     <div class="header-lang">
                         <div class="change-lang">
                             <span class="active-lang" id="lang-ru">РУС</span>
@@ -286,18 +286,10 @@
                         </div>
                         <div class="portfolio-leftside-footer d-flex justify-content-between align-items-center">
                             <span id="sliderCounter">01 / 08</span>
-                            <div class="portfolio-slider-arrows d-flex">
+                            <div class="portfolio-slider-arrows d-flex align-items-center">
                                 <a class="prod-slider-btn slick-arrow" id="portfolioArrowLeft">
-                                    <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                         clip-rule="evenodd">
-                                        <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"/>
-                                    </svg>
                                 </a>
                                 <a class="prod-slider-btn slick-arrow" id="portfolioArrowRight">
-                                    <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                         clip-rule="evenodd">
-                                        <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -305,7 +297,9 @@
                     <div class="col-md-5 portfolio-rightside d-flex justify-content-between align-items-start">
                         <h3>Заказать каталог <br>и рассчитать <br>стоимость</h3>
                         <div class="arrow-more d-flex flex-column align-items-end">
-                            <a href=""><img src="img/arrow-right-more.png" alt="Стрелка вправо"></a>
+                            <a href="">
+                                <img src="/img/thin-arrow-right.png" alt="Иконка">
+                            </a>
                             <a href=""><p>Подробнее</p></a>
                         </div>
                     </div>
@@ -566,18 +560,10 @@
                             </div>
                         </div>
                         <div class="col-md-3 d-flex justify-content-end">
-                            <div class="top-sales-slider-arrows d-flex">
+                            <div class="top-sales-slider-arrows d-flex align-items-center">
                                 <a class="prod-slider-btn slick-arrow" id="topSalesArrowLeft">
-                                    <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                         clip-rule="evenodd">
-                                        <path d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"/>
-                                    </svg>
                                 </a>
                                 <a class="prod-slider-btn slick-arrow" id="topSalesArrowRight">
-                                    <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                         clip-rule="evenodd">
-                                        <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                                    </svg>
                                 </a>
                             </div>
                         </div>
@@ -600,10 +586,7 @@
                             <p>Заявка-просчет</p>
                         </div>
                         <div class="stages-body-item-arrow">
-                            <svg width="50" height="40" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                 clip-rule="evenodd">
-                                <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                            </svg>
+                            <img src="/img/stages-arrow.png" alt="Иконка">
                         </div>
                         <div class="stages-body-item d-flex flex-column justify-content-between">
                             <span class="d-flex justify-content-start">2</span>
@@ -613,10 +596,7 @@
                             <p>Согласование макета</p>
                         </div>
                         <div class="stages-body-item-arrow">
-                            <svg width="50" height="40" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                 clip-rule="evenodd">
-                                <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                            </svg>
+                            <img src="/img/stages-arrow.png" alt="Иконка">
                         </div>
                         <div class="stages-body-item d-flex flex-column justify-content-between">
                             <span class="d-flex justify-content-start">3</span>
@@ -627,10 +607,7 @@
                             <br>
                         </div>
                         <div class="stages-body-item-arrow">
-                            <svg width="50" height="40" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                 clip-rule="evenodd">
-                                <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                            </svg>
+                            <img src="/img/stages-arrow.png" alt="Иконка">
                         </div>
                         <div class="stages-body-item d-flex flex-column justify-content-between">
                             <span class="d-flex justify-content-start">4</span>
@@ -641,10 +618,7 @@
                             <br>
                         </div>
                         <div class="stages-body-item-arrow">
-                            <svg width="50" height="40" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd"
-                                 clip-rule="evenodd">
-                                <path d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"/>
-                            </svg>
+                            <img src="/img/stages-arrow.png" alt="Иконка">
                         </div>
                         <div class="stages-body-item d-flex flex-column justify-content-between">
                             <span class="d-flex justify-content-start">5</span>
@@ -776,64 +750,76 @@
     </div>
 </div>
 
-
-<section class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3">
-                <div class="footer-logo">
-                    <img src="/img/logo.png" alt="Логотип">
-                </div>
-            </div>
-            <div class="col-md-2 d-flex flex-column justify-content-between">
-                <span>Навигация</span>
-                <ul class="mt-2">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="./product.html">Продукция</a></li>
-                    <li><a href="#">Акции</a></li>
-                    <li><a href="#">Клиенты</a></li>
-                    <li><a href="#">Новости</a></li>
-                    <li><a href="./contact.html">Контакты</a></li>
-                </ul>
-            </div>
-            <div class="col-md-2 footer-contacts d-flex flex-column justify-content-between">
-                <span>Контакты</span>
-                <ul class="mt-2">
-                    <li><a href="tel:0442909199">(044) 290 91 99</a></li>
-                    <li><a href="mailto:info@print24.kiev.ua">info@print24.kiev.ua</a></li>
-                    <li><a href="https://goo.gl/maps/pMYgJ7oGFidpgPdr6" target="_blank">вул. Виборгська, 84</a></li>
-                    <li>04107, Киев Украина</li>
-                    <li>Пн - Пт: 9.00 - 18.00</li>
-                    <li>Сб-Вс — выходной</li>
-                </ul>
-            </div>
-            <div class="col-md-5 d-flex flex-column justify-content-between">
-                <p>Наша компания это многопрофильное полиграфическое предприятие с акцентом на предоставлении услуг
-                    цифровой печати и оперативной полиграфии. Также предоставляем услуги офсетной печати форматом B2
-                    (календари, плакаты, афиши, открытки и т.п.).</p>
-                <div class="social-networks d-flex justify-content-start align-items-center">
-                    <a href="">
-                        <div class="social-fb">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
-                                <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
-                            </svg>
-                        </div>
-                    </a>
-                    <a href="">
-                        <div class="social-inst">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
-                            </svg>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
+<div class="row row-footer">
+    <div class="col-md-1">
+        &nbsp;
     </div>
-</section>
+    <div class="col-md-11 ml-auto">
+        <section class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer-logo">
+                            <img src="/img/logo.png" alt="Логотип">
+                        </div>
+                    </div>
+                    <div class="col-md-2 d-flex flex-column justify-content-between">
+                        <span>Навигация</span>
+                        <ul class="mt-2">
+                            <li><a href="#">Услуги</a></li>
+                            <li><a href="./product.html">Продукция</a></li>
+                            <li><a href="#">Акции</a></li>
+                            <li><a href="#">Клиенты</a></li>
+                            <li><a href="#">Новости</a></li>
+                            <li><a href="./contact.html">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-2 footer-contacts d-flex flex-column justify-content-between">
+                        <span>Контакты</span>
+                        <ul class="mt-2">
+                            <li><a href="tel:0442908155">(044) 290 81 55</a></li>
+                            <li><a href="mailto:info@print24.kiev.ua">info@print24.kiev.ua</a></li>
+                            <li><a href="https://goo.gl/maps/pMYgJ7oGFidpgPdr6" target="_blank">вул. Виборгська, 84</a></li>
+                            <li>04107, Киев Украина</li>
+                            <li>Пн - Пт: 9.00 - 18.00</li>
+                            <li>Сб-Вс — выходной</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 d-flex flex-column justify-content-between">
+                        <p>Наша компания это многопрофильное полиграфическое предприятие с акцентом на предоставлении услуг
+                            цифровой печати и оперативной полиграфии. Также предоставляем услуги офсетной печати форматом B2
+                            (календари, плакаты, афиши, открытки и т.п.).</p>
+                        <div class="social-networks d-flex justify-content-start align-items-center">
+                            <a href="">
+                                <div class="social-fb">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                        <path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                            <a href="">
+                                <div class="social-inst">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                        <path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/>
+                                    </svg>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
 
 <footer class="row foot-footer">
-    <p>&copy; 2015 - <span id="currentYear"></span> Sky Solutions Полиграфия в Киеве</p>
+    <div class="col-md-1">
+        &nbsp;
+    </div>
+    <div class="col-md-11">
+        <p>&copy; 2015 - <span id="currentYear"></span> Sky Solutions Полиграфия в Киеве</p>
+    </div>
 </footer>
 
 <script src="script/jquery-3.6.0.min.js"></script>

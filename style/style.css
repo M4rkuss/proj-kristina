@@ -27,7 +27,7 @@ a {
 }
 
 .container {
-  max-width: 1500px !important;
+  max-width: 100% !important;
   padding: 0 !important;
 }
 
@@ -183,7 +183,7 @@ header .header-wrap-right-side .header-btn-order a:hover {
 
 .left-aside {
   border-right: 0.5px solid #eff2f9;
-  border-left: 0.5px solid #eff2f9;
+  border-bottom: 0.5px solid #eff2f9;
   display: flex;
   justify-content: center;
 }
@@ -448,16 +448,27 @@ header .header-wrap-right-side .header-btn-order a:hover {
 .portfolio .portfolio-leftside .portfolio-leftside-footer .portfolio-slider-arrow-left {
   margin-right: 20px;
 }
-.portfolio .portfolio-leftside .portfolio-leftside-footer svg {
-  fill: #eff2f9;
-  transition: 0.3s ease;
+.portfolio .portfolio-leftside .portfolio-leftside-footer .prod-slider-btn {
+  background-size: 40px;
+  width: 40px;
+  height: 18px;
+  transition: 0.4s ease;
 }
-.portfolio .portfolio-leftside .portfolio-leftside-footer svg:hover {
-  fill: #014b94;
+.portfolio .portfolio-leftside .portfolio-leftside-footer .prod-slider-btn:first-child {
+  background-image: url(/img/portfolio-arrow-left.png);
+  margin-right: 20px;
+}
+.portfolio .portfolio-leftside .portfolio-leftside-footer .prod-slider-btn:first-child:hover {
+  background-image: url(/img/portfolio-arrow-left-active.png);
+}
+.portfolio .portfolio-leftside .portfolio-leftside-footer .prod-slider-btn:last-child {
+  background-image: url(/img/portfolio-arrow-right.png);
+}
+.portfolio .portfolio-leftside .portfolio-leftside-footer .prod-slider-btn:last-child:hover {
+  background-image: url(/img/portfolio-arrow-right-active.png);
+}
+.portfolio .portfolio-leftside .portfolio-leftside-footer .prod-slider-btn:hover {
   cursor: pointer;
-}
-.portfolio .portfolio-leftside .portfolio-leftside-footer path {
-  transform: scale(1.5);
 }
 .portfolio .portfolio-rightside {
   background-color: #0e559e;
@@ -469,11 +480,13 @@ header .header-wrap-right-side .header-btn-order a:hover {
   font-size: 35px;
 }
 .portfolio .portfolio-rightside .arrow-more img {
-  width: 60px;
+  width: 50px;
+  margin-bottom: 10px;
 }
 .portfolio .portfolio-rightside .arrow-more p {
   text-transform: uppercase;
   color: #fff;
+  font-size: 14px;
 }
 
 .our-clients {
@@ -506,8 +519,8 @@ header .header-wrap-right-side .header-btn-order a:hover {
   background: #014b94;
 }
 .our-clients .our-clients-wrap .our-clients-wrap-rightside {
-  padding: 50px 90px 0 90px;
-  margin-top: 30px;
+  padding: 0 90px;
+  margin: auto;
 }
 .our-clients .our-clients-wrap .our-clients-wrap-rightside .our-clients-slider-item {
   display: flex;
@@ -656,42 +669,37 @@ header .header-wrap-right-side .header-btn-order a:hover {
   color: #014b94;
 }
 .top-sales .top-sales-slider-arrows #topSalesArrowLeft {
-  position: relative;
+  background-image: url(/img/top-sales-left.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s ease;
+  margin-right: 30px;
 }
-.top-sales .top-sales-slider-arrows #topSalesArrowLeft:before {
-  content: "(";
-  position: absolute;
-  top: 3px;
-  left: -10px;
-  margin: 0 auto;
-  width: 10px;
-  height: 10px;
-  transform: scale(2);
-  color: #014b94;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-.top-sales .top-sales-slider-arrows #topSalesArrowLeft:hover:before {
-  opacity: 1;
+.top-sales .top-sales-slider-arrows #topSalesArrowLeft:hover {
+  cursor: pointer;
+  background-image: url(/img/top-sales-left-active.png);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  width: 55px;
+  height: 41px;
 }
 .top-sales .top-sales-slider-arrows #topSalesArrowRight {
-  position: relative;
+  background-image: url(/img/top-sales-right.png);
+  background-repeat: no-repeat;
+  background-size: 40px;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s ease;
 }
-.top-sales .top-sales-slider-arrows #topSalesArrowRight:before {
-  content: ")";
-  position: absolute;
-  top: 3px;
-  right: -10px;
-  margin: 0 auto;
-  width: 10px;
-  height: 10px;
-  transform: scale(2);
-  color: #014b94;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-.top-sales .top-sales-slider-arrows #topSalesArrowRight:hover:before {
-  opacity: 1;
+.top-sales .top-sales-slider-arrows #topSalesArrowRight:hover {
+  cursor: pointer;
+  background-image: url(/img/top-sales-right-active.png);
+  background-repeat: no-repeat;
+  background-size: 55px;
+  width: 55px;
+  height: 41px;
 }
 .top-sales .top-sales-slider-arrows svg {
   fill: #eff2f9;
@@ -700,9 +708,6 @@ header .header-wrap-right-side .header-btn-order a:hover {
 .top-sales .top-sales-slider-arrows svg:hover {
   fill: #014b94;
   cursor: pointer;
-}
-.top-sales .top-sales-slider-arrows #topSalesArrowLeft {
-  margin-right: 20px;
 }
 .top-sales .top-sales-slider-arrows path {
   transform: scale(2);
@@ -741,11 +746,8 @@ header .header-wrap-right-side .header-btn-order a:hover {
 .stages .stages-body .stages-body-item-arrow {
   margin-top: 50px;
 }
-.stages .stages-body .stages-body-item-arrow svg {
-  fill: #014b94;
-}
-.stages .stages-body .stages-body-item-arrow path {
-  transform: scale(1.9);
+.stages .stages-body .stages-body-item-arrow img {
+  width: 40px;
 }
 
 .personal {
@@ -853,8 +855,8 @@ header .header-wrap-right-side .header-btn-order a:hover {
 }
 
 .footer {
-  padding: 60px 50px 100px 125px;
-  border-top: 0.5px solid #eff2f9;
+  max-width: 100% !important;
+  padding: 35px 50px 100px 6px;
 }
 .footer .footer-logo {
   width: 130px;
@@ -929,7 +931,15 @@ footer {
   font-size: 10px;
   background: #014b94;
   color: #fff;
-  padding: 20px 50px 20px 120px;
+  padding: 20px 50px 20px 0;
+}
+footer .col-md-1 {
+  max-width: 9%;
+  flex: 0 0 9%;
+}
+footer .col-md-11 {
+  max-width: 91%;
+  flex: 0 0 91%;
 }
 footer p {
   margin-bottom: 0;
@@ -1184,7 +1194,7 @@ footer p {
   transition: 0.4s;
 }
 .produkciya .produkciya-wrap a svg:hover {
-  fill: #014b94;
+  fill: #36373b;
   cursor: pointer;
 }
 
@@ -1223,54 +1233,33 @@ footer p {
 .catalog .catalog-banner .catalog-arrows {
   margin-top: 70px;
 }
-.catalog .catalog-banner .catalog-arrows svg {
-  fill: #4170b1;
-  transition: 0.3s ease;
-}
-.catalog .catalog-banner .catalog-arrows svg path {
-  transform: scale(2);
-}
-.catalog .catalog-banner .catalog-arrows svg:hover {
-  fill: #fff;
-  cursor: pointer;
-}
 .catalog .catalog-banner .catalog-arrows #catalogArrowLeft {
-  position: relative;
+  background-image: url(/img/catalog-arrow-left.png);
+  background-size: 40px;
+  width: 40px;
+  height: 30px;
+  transition: 0.4s ease;
 }
-.catalog .catalog-banner .catalog-arrows #catalogArrowLeft:before {
-  content: "(";
-  position: absolute;
-  top: 3px;
-  left: -10px;
-  margin: 0 auto;
-  width: 10px;
-  height: 10px;
-  transform: scale(2);
-  color: #fff;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-.catalog .catalog-banner .catalog-arrows #catalogArrowLeft:hover:before {
-  opacity: 1;
+.catalog .catalog-banner .catalog-arrows #catalogArrowLeft:hover {
+  cursor: pointer;
+  background-image: url(/img/catalog-arrow-left-active.png);
+  background-size: 40px;
+  width: 40px;
+  height: 30px;
 }
 .catalog .catalog-banner .catalog-arrows #catalogArrowRight {
-  position: relative;
+  background-image: url(/img/catalog-arrow-right.png);
+  background-size: 40px;
+  width: 40px;
+  height: 30px;
+  transition: 0.4s ease;
 }
-.catalog .catalog-banner .catalog-arrows #catalogArrowRight:before {
-  content: ")";
-  position: absolute;
-  top: 3px;
-  right: -10px;
-  margin: 0 auto;
-  width: 10px;
-  height: 10px;
-  transform: scale(2);
-  color: #fff;
-  opacity: 0;
-  transition: 0.3s ease;
-}
-.catalog .catalog-banner .catalog-arrows #catalogArrowRight:hover:before {
-  opacity: 1;
+.catalog .catalog-banner .catalog-arrows #catalogArrowRight:hover {
+  cursor: pointer;
+  background-image: url(/img/catalog-arrow-right-active.png);
+  background-size: 40px;
+  width: 40px;
+  height: 30px;
 }
 .catalog .catalog-banner .catalog-arrows a:last-child {
   margin-left: 15px;
@@ -1288,6 +1277,9 @@ footer p {
   background-color: #fff;
   padding: 0;
   border: none;
+}
+.catalog .produkciya-wrap .accordion .card-header button {
+  width: 60%;
 }
 .catalog .produkciya-wrap .accordion .card-body {
   padding: 1.25rem 1.5rem;
@@ -1386,7 +1378,7 @@ footer p {
   transition: 0.4s;
 }
 .catalog .produkciya-wrap a svg:hover {
-  fill: #014b94;
+  fill: #36373b;
   cursor: pointer;
 }
 
@@ -1431,11 +1423,10 @@ footer p {
 .article {
   padding: 50px;
 }
-.article .article-head .article-head-leftside path, .article .article-head .article-head-rightside path {
-  transform: scale(2);
-  fill: #36373b;
+.article .article-head .article-head-leftside img, .article .article-head .article-head-rightside img {
+  width: 40px;
 }
-.article .article-head .article-head-leftside svg:hover, .article .article-head .article-head-rightside svg:hover {
+.article .article-head .article-head-leftside img:hover, .article .article-head .article-head-rightside img:hover {
   cursor: pointer;
 }
 .article .article-head .article-head-leftside h1, .article .article-head .article-head-rightside h1 {
@@ -1489,12 +1480,12 @@ footer p {
 .article .article-footer .article-footer-navigation span {
   color: #36373b;
 }
-.article .article-footer .article-footer-navigation svg:hover {
-  cursor: pointer;
+.article .article-footer .article-footer-navigation img {
+  width: 40px;
+  margin-top: 10px;
 }
-.article .article-footer .article-footer-navigation path {
-  transform: scale(2);
-  fill: #36373b;
+.article .article-footer .article-footer-navigation img:hover {
+  cursor: pointer;
 }
 
 .product {
@@ -1556,7 +1547,7 @@ footer p {
 }
 .product .product-wrap-rightside .product-wrap-rightside-footer table td, .product .product-wrap-rightside .product-wrap-rightside-footer table tr, .product .product-wrap-rightside .product-wrap-rightside-footer table th {
   font-weight: 300;
-  font-size: 12px;
+  font-size: 11px;
 }
 .product .product-wrap-rightside .product-wrap-rightside-footer table th:first-child {
   width: 200px;

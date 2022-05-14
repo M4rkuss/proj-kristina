@@ -1,28 +1,84 @@
-@media screen and (min-width: 1520px) and (max-width: 2400px) {
+@media screen and (min-width: 1820px) {
+  .our-clients-wrap-rightside .our-clients-slider-item h3 {
+    font-size: 27px !important;
+  }
+  .our-clients-wrap-rightside .our-clients-slider-item p {
+    font-size: 18px !important;
+  }
+  .our-clients-wrap-rightside .our-clients-slider-item span {
+    font-size: 16px !important;
+  }
+
+  .our-clients-wrap-leftside-item img {
+    width: 70% !important;
+  }
+
+  header .col-md-1 #header-logo {
+    height: 200px !important;
+  }
+  header .col-md-11 #header-wrap-left-side, header .col-md-11 #header-wrap-right-side {
+    height: 200px !important;
+  }
+
   .footer {
-    padding: 60px 50px 100px 115px !important;
+    padding-left: 0 !important;
   }
 }
 @media screen and (min-width: 1480px) {
+  header .col-md-1 {
+    max-width: 11% !important;
+    flex: 0 0 11% !important;
+  }
+  header .col-md-1 .header-logo {
+    height: 170px !important;
+  }
+  header .col-md-11 {
+    max-width: 89% !important;
+    flex: 0 0 89% !important;
+  }
+  header .col-md-11 .header-wrap-left-side, header .col-md-11 .header-wrap-right-side {
+    height: 170px !important;
+  }
+
+  .under-header .col-md-1 {
+    max-width: 11% !important;
+    flex: 0 0 11% !important;
+  }
+  .under-header .col-md-11 {
+    max-width: 89% !important;
+    flex: 0 0 89% !important;
+  }
+
+  .row-footer .col-md-1 {
+    max-width: 11% !important;
+    flex: 0 0 11% !important;
+  }
+  .row-footer .col-md-11 {
+    max-width: 89% !important;
+    flex: 0 0 89% !important;
+  }
+
+  .footer {
+    padding-left: 0 !important;
+  }
+
+  footer .col-md-1 {
+    max-width: 11% !important;
+    flex: 0 0 11% !important;
+  }
+  footer .col-md-11 {
+    max-width: 89% !important;
+    flex: 0 0 89% !important;
+  }
+
   .produkciya-wrap-rightside .produkciya-wrap-rightside-item {
     width: 300px !important;
     height: 350px !important;
   }
 }
-@media screen and (min-width: 1365px) {
-  .footer {
-    max-width: 1463px !important;
-    margin: 0 auto !important;
-  }
-}
 @media screen and (max-width: 1300px) {
   .our-clients .our-clients-wrap .our-clients-wrap-leftside-item img {
     width: 100% !important;
-  }
-}
-@media screen and (min-width: 1200px) and (max-width: 1300px) {
-  .footer {
-    padding: 60px 50px 100px 115px !important;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -78,10 +134,6 @@
 
   .footer-logo img {
     width: 90% !important;
-  }
-
-  footer {
-    padding: 20px !important;
   }
 
   .produkciya-wrap .col-md-2 {
@@ -189,6 +241,25 @@
 
   .hero-footer p {
     font-size: 13px;
+  }
+
+  .row-footer .col-md-1 {
+    display: none !important;
+  }
+  .row-footer .col-md-11 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
+  }
+
+  footer {
+    padding: 30px !important;
+  }
+  footer .col-md-1 {
+    display: none !important;
+  }
+  footer .col-md-11 {
+    max-width: 100% !important;
+    flex: 0 0 100% !important;
   }
 
   .footer {
@@ -396,12 +467,8 @@
     font-size: 14px;
   }
   .stages-body .stages-body-item-arrow {
-    margin-left: -20px;
-  }
-  .stages-body .stages-body-item-arrow svg {
-    margin-left: 20px !important;
+    margin: auto !important;
     transform: rotate(90deg);
-    margin-top: 70px;
   }
 
   .footer {

@@ -36,7 +36,7 @@ a {
 //}
 
 .container {
-  max-width: 1500px !important;
+  max-width: 100% !important;
   padding: 0 !important;
 }
 
@@ -222,7 +222,7 @@ header {
 
 .left-aside {
   border-right: 0.5px solid #eff2f9;
-  border-left: 0.5px solid #eff2f9;
+  border-bottom: 0.5px solid #eff2f9;
   display: flex;
   justify-content: center;
 
@@ -523,6 +523,7 @@ header {
 
     .portfolio-leftside-footer {
       margin-top: 10px;
+
       span {
         color: $main-blue;
         font-size: 13px;
@@ -532,18 +533,27 @@ header {
         margin-right: 20px;
       }
 
-      svg {
-        fill: #eff2f9;
-        transition: .3s ease;
-
+      .prod-slider-btn {
+        background-size: 40px;
+        width: 40px;
+        height: 18px;
+        transition: .4s ease;
+        &:first-child {
+          background-image: url(/img/portfolio-arrow-left.png);
+          margin-right: 20px;
+          &:hover {
+            background-image: url(/img/portfolio-arrow-left-active.png);
+          }
+        }
+        &:last-child {
+          background-image: url(/img/portfolio-arrow-right.png);
+          &:hover {
+            background-image: url(/img/portfolio-arrow-right-active.png);
+          }
+        }
         &:hover {
-          fill: $main-blue;
           cursor: pointer;
         }
-      }
-
-      path {
-        transform: scale(1.5);
       }
     }
   }
@@ -560,12 +570,14 @@ header {
 
     .arrow-more {
       img {
-        width: 60px;
+        width: 50px;
+        margin-bottom: 10px;
       }
 
       p {
         text-transform: uppercase;
         color: #fff;
+        font-size: 14px;
       }
     }
   }
@@ -608,8 +620,8 @@ header {
     }
 
     .our-clients-wrap-rightside {
-      padding: 50px 90px 0 90px;
-      margin-top: 30px;
+      padding: 0 90px;
+      margin: auto;
 
       .our-clients-slider-item {
         display: flex;
@@ -790,50 +802,37 @@ header {
     }
 
     #topSalesArrowLeft {
-      position: relative;
-
-      &:before {
-        content: '(';
-        position: absolute;
-        top: 3px;
-        left: -10px;
-        margin: 0 auto;
-        width: 10px;
-        height: 10px;
-        transform: scale(2);
-        color: $main-blue;
-        opacity: 0;
-        transition: .3s ease;
-      }
-
+      background-image: url(/img/top-sales-left.png);
+      background-repeat: no-repeat;
+      background-size: 40px;
+      width: 40px;
+      height: 40px;
+      transition: .4s ease;
+      margin-right: 30px;
       &:hover {
-        &:before {
-          opacity: 1;
-        }
+        cursor: pointer;
+        background-image: url(/img/top-sales-left-active.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        width: 55px;
+        height: 41px;
       }
     }
 
     #topSalesArrowRight {
-      position: relative;
-
-      &:before {
-        content: ')';
-        position: absolute;
-        top: 3px;
-        right: -10px;
-        margin: 0 auto;
-        width: 10px;
-        height: 10px;
-        transform: scale(2);
-        color: $main-blue;
-        opacity: 0;
-        transition: .3s ease;
-      }
-
+      background-image: url(/img/top-sales-right.png);
+      background-repeat: no-repeat;
+      background-size: 40px;
+      width: 40px;
+      height: 40px;
+      transition: .4s ease;
       &:hover {
-        &:before {
-          opacity: 1;
-        }
+        cursor: pointer;
+        background-image: url(/img/top-sales-right-active.png);
+        background-repeat: no-repeat;
+        background-size: 55px;
+        width: 55px;
+        height: 41px;
       }
     }
 
@@ -845,10 +844,6 @@ header {
         fill: $main-blue;
         cursor: pointer;
       }
-    }
-
-    #topSalesArrowLeft {
-      margin-right: 20px;
     }
 
     path {
@@ -896,13 +891,8 @@ header {
 
     .stages-body-item-arrow {
       margin-top: 50px;
-
-      svg {
-        fill: $main-blue;
-      }
-
-      path {
-        transform: scale(1.9);
+      img {
+        width: 40px;
       }
     }
   }
@@ -1028,8 +1018,8 @@ header {
 }
 
 .footer {
-  padding: 60px 50px 100px 125px;
-  border-top: 0.5px solid #eff2f9;
+  max-width: 100% !important;
+  padding: 35px 50px 100px 6px;
 
   .footer-logo {
     width: 130px;
@@ -1116,7 +1106,16 @@ footer {
   font-size: 10px;
   background: $main-blue;
   color: #fff;
-  padding: 20px 50px 20px 120px;
+  padding: 20px 50px 20px 0;
+
+  .col-md-1 {
+    max-width: 9%;
+    flex: 0 0 9%;
+  }
+  .col-md-11 {
+    max-width: 91%;
+    flex: 0 0 91%
+  }
 
   p {
     margin-bottom: 0;
@@ -1449,7 +1448,7 @@ footer {
         transition: .4s;
 
         &:hover {
-          fill: $main-blue;
+          fill: $main-text;
           cursor: pointer;
         }
       }
@@ -1500,57 +1499,32 @@ footer {
     }
     .catalog-arrows {
       margin-top: 70px;
-      svg {
-        fill: #4170b1;
-        transition: .3s ease;
-        path {
-          transform: scale(2);
-        }
-        &:hover {
-          fill: #fff;
-          cursor: pointer;
-        }
-      }
       #catalogArrowLeft {
-        position: relative;
-        &:before {
-          content: '(';
-          position: absolute;
-          top: 3px;
-          left: -10px;
-          margin: 0 auto;
-          width: 10px;
-          height: 10px;
-          transform: scale(2);
-          color: #fff;
-          opacity: 0;
-          transition: .3s ease;
-        }
+        background-image: url(/img/catalog-arrow-left.png);
+        background-size: 40px;
+        width: 40px;
+        height: 30px;
+        transition: .4s ease;
         &:hover {
-          &:before {
-            opacity: 1;
-          }
+          cursor: pointer;
+          background-image: url(/img/catalog-arrow-left-active.png);
+          background-size: 40px;
+          width: 40px;
+          height: 30px;
         }
       }
       #catalogArrowRight {
-        position: relative;
-        &:before {
-          content: ')';
-          position: absolute;
-          top: 3px;
-          right: -10px;
-          margin: 0 auto;
-          width: 10px;
-          height: 10px;
-          transform: scale(2);
-          color: #fff;
-          opacity: 0;
-          transition: .3s ease;
-        }
+        background-image: url(/img/catalog-arrow-right.png);
+        background-size: 40px;
+        width: 40px;
+        height: 30px;
+        transition: .4s ease;
         &:hover {
-          &:before {
-            opacity: 1;
-          }
+          cursor: pointer;
+          background-image: url(/img/catalog-arrow-right-active.png);
+          background-size: 40px;
+          width: 40px;
+          height: 30px;
         }
       }
       a {
@@ -1577,6 +1551,9 @@ footer {
         background-color: #fff;
         padding: 0;
         border: none;
+        button {
+          width: 60%;
+        }
       }
       .card-body {
         padding: 1.25rem 1.5rem;
@@ -1696,7 +1673,7 @@ footer {
         transition: .4s;
 
         &:hover {
-          fill: $main-blue;
+          fill: $main-text;
           cursor: pointer;
         }
       }
@@ -1759,12 +1736,11 @@ footer {
   padding: 50px;
   .article-head {
     .article-head-leftside, .article-head-rightside {
-      path {
-        transform: scale(2);
-        fill: $main-text;
-      }
-      svg:hover {
-        cursor: pointer;
+      img {
+        width: 40px;
+        &:hover {
+          cursor: pointer;
+        }
       }
       h1 {
         margin-left: 50px;
@@ -1823,12 +1799,12 @@ footer {
       span {
         color: $main-text;
       }
-      svg:hover {
-        cursor: pointer;
-      }
-      path {
-        transform: scale(2);
-        fill: $main-text;
+      img {
+        width: 40px;
+        margin-top: 10px;
+        &:hover {
+          cursor: pointer;
+        }
       }
     }
   }
@@ -1905,7 +1881,7 @@ footer {
         color: #323232;
         td, tr, th {
           font-weight: 300;
-          font-size: 12px;
+          font-size: 11px;
         }
         th:first-child {
           width: 200px;
