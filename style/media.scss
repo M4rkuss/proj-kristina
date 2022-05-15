@@ -101,7 +101,42 @@ $main-bg: #f4f7fc;
 }
 
 @media screen and (max-width: 1300px) {
-
+  header {
+    .col-md-1 {
+      max-width: 10% !important;
+      flex: 0 0 10% !important;
+      .header-logo {
+        height: 140px !important;
+      }
+    }
+    .col-md-11 {
+      max-width: 90% !important;
+      flex: 0 0 90% !important;
+      .header-wrap-left-side, .header-wrap-right-side {
+        height: 140px !important;
+      }
+    }
+  }
+  .under-header {
+    .col-md-1 {
+      max-width: 10% !important;
+      flex: 0 0 10% !important;
+    }
+    .col-md-11 {
+      max-width: 90% !important;
+      flex: 0 0 90% !important;
+    }
+  }
+  footer {
+    .col-md-1 {
+      max-width:11% !important;
+      flex: 0 0 11% !important;
+    }
+    .col-md-11 {
+      max-width: 89% !important;
+      flex: 0 0 89% !important;
+    }
+  }
   .our-clients {
     .our-clients-wrap {
       .our-clients-wrap-leftside-item {
@@ -487,6 +522,16 @@ $main-bg: #f4f7fc;
   .stages, .top-sales, .portfolio-leftside, .polygraphy-in-kiev, .hero-head {
     padding: 20px !important;
   }
+  .hero {
+    h1 {
+      font-size: 40px !important;
+    }
+  }
+  .portfolio {
+    h2 {
+      font-size: 36px !important;
+    }
+  }
   .portfolio-rightside {
     padding: 50px 20px !important;
     h3 {
@@ -512,6 +557,9 @@ $main-bg: #f4f7fc;
   }
   .our-clients {
     padding: 20px !important;
+    h2 {
+      font-size: 36px !important;
+    }
     .our-clients-wrapper {
       .col-md-4 {
         max-width: 100%;
@@ -531,6 +579,9 @@ $main-bg: #f4f7fc;
       width: 100% !important;
     }
   }
+  .stages-head h2{
+    font-size: 36px !important;
+  }
   .stages-body {
     flex-direction: column;
     align-items: center !important;
@@ -547,7 +598,7 @@ $main-bg: #f4f7fc;
     }
   }
   .footer {
-    padding: 40px !important;
+    padding: 20px !important;
   }
   .produkciya {
     padding: 20px !important;

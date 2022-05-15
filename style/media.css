@@ -77,6 +77,39 @@
   }
 }
 @media screen and (max-width: 1300px) {
+  header .col-md-1 {
+    max-width: 10% !important;
+    flex: 0 0 10% !important;
+  }
+  header .col-md-1 .header-logo {
+    height: 140px !important;
+  }
+  header .col-md-11 {
+    max-width: 90% !important;
+    flex: 0 0 90% !important;
+  }
+  header .col-md-11 .header-wrap-left-side, header .col-md-11 .header-wrap-right-side {
+    height: 140px !important;
+  }
+
+  .under-header .col-md-1 {
+    max-width: 10% !important;
+    flex: 0 0 10% !important;
+  }
+  .under-header .col-md-11 {
+    max-width: 90% !important;
+    flex: 0 0 90% !important;
+  }
+
+  footer .col-md-1 {
+    max-width: 11% !important;
+    flex: 0 0 11% !important;
+  }
+  footer .col-md-11 {
+    max-width: 89% !important;
+    flex: 0 0 89% !important;
+  }
+
   .our-clients .our-clients-wrap .our-clients-wrap-leftside-item img {
     width: 100% !important;
   }
@@ -408,6 +441,14 @@
     padding: 20px !important;
   }
 
+  .hero h1 {
+    font-size: 40px !important;
+  }
+
+  .portfolio h2 {
+    font-size: 36px !important;
+  }
+
   .portfolio-rightside {
     padding: 50px 20px !important;
   }
@@ -436,6 +477,9 @@
   .our-clients {
     padding: 20px !important;
   }
+  .our-clients h2 {
+    font-size: 36px !important;
+  }
   .our-clients .our-clients-wrapper .col-md-4 {
     max-width: 100%;
     flex: 0 0 100%;
@@ -455,6 +499,10 @@
     width: 100% !important;
   }
 
+  .stages-head h2 {
+    font-size: 36px !important;
+  }
+
   .stages-body {
     flex-direction: column;
     align-items: center !important;
@@ -472,7 +520,7 @@
   }
 
   .footer {
-    padding: 40px !important;
+    padding: 20px !important;
   }
 
   .produkciya {

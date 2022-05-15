@@ -340,7 +340,7 @@ header {
       }
 
       .hero-slider-arrows {
-        width: 80% !important;
+        width: 90% !important;
         padding: 0 30px;
         position: absolute;
         z-index: 10;
@@ -350,31 +350,24 @@ header {
         left: 0;
         margin: 0 auto;
 
-        svg {
-          fill: #fff;
-
+        img {
+          width: 50px;
+          filter: invert(1);
+          filter: brightness(160%);
           &:hover {
             cursor: pointer;
-          }
-
-          path {
-            transform: scale(2);
           }
         }
 
         #heroArrowLeft {
           position: relative;
-          svg {
-            position: relative;
-            z-index: 5;
-          }
 
           &:before {
             content: url('/img/half-circle.png');
             position: absolute;
             z-index: 1;
-            top: 1px;
-            right: 8px;
+            top: -1px;
+            right: 10px;
             margin: 0 auto;
             transform: rotate(-90deg);
           }
@@ -382,18 +375,13 @@ header {
 
         #heroArrowRight {
           position: relative;
-          svg{
-            position: relative;
-            z-index: 5;
-            transform: rotate(180deg);
-          }
 
           &:before {
             content: url('/img/half-circle.png');
             position: absolute;
             z-index: 1;
-            top: 15px;
-            left: 8px;
+            top: 18px;
+            left: 10px;
             margin: 0 auto;
             transform: rotate(90deg);
           }
@@ -402,31 +390,25 @@ header {
 
       .hero-slider-circle-big {
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: 0 auto;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
         border: 0.5px solid #fff;
         border-radius: 50%;
         width: 110%;
         height: 110%;
-        transform: scale(1.15);
         z-index: 1;
       }
 
       .hero-slider-circle-small {
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        margin: 0 auto;
+        bottom: -35px;
+        left: 50%;
+        transform: translateX(-50%);
         border: 1px solid #fff;
         border-radius: 50%;
-        width: 110%;
-        height: 110%;
-        transform: scale(1.1);
+        width: 104%;
+        height: 104%;
         z-index: 1;
       }
     }
@@ -449,7 +431,7 @@ header {
     margin-top: 15px;
     h2 {
       color: $main-text;
-      font-size: 35px;
+      font-size: 36px;
     }
 
     span {

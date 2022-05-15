@@ -282,7 +282,7 @@ header .header-wrap-right-side .header-btn-order a:hover {
   height: 650px;
 }
 .hero .hero-wrap .hero-rightside .hero-slider-arrows {
-  width: 80% !important;
+  width: 90% !important;
   padding: 0 30px;
   position: absolute;
   z-index: 10;
@@ -292,74 +292,58 @@ header .header-wrap-right-side .header-btn-order a:hover {
   left: 0;
   margin: 0 auto;
 }
-.hero .hero-wrap .hero-rightside .hero-slider-arrows svg {
-  fill: #fff;
+.hero .hero-wrap .hero-rightside .hero-slider-arrows img {
+  width: 50px;
+  filter: invert(1);
+  filter: brightness(160%);
 }
-.hero .hero-wrap .hero-rightside .hero-slider-arrows svg:hover {
+.hero .hero-wrap .hero-rightside .hero-slider-arrows img:hover {
   cursor: pointer;
-}
-.hero .hero-wrap .hero-rightside .hero-slider-arrows svg path {
-  transform: scale(2);
 }
 .hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowLeft {
   position: relative;
-}
-.hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowLeft svg {
-  position: relative;
-  z-index: 5;
 }
 .hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowLeft:before {
   content: url("/img/half-circle.png");
   position: absolute;
   z-index: 1;
-  top: 1px;
-  right: 8px;
+  top: -1px;
+  right: 10px;
   margin: 0 auto;
   transform: rotate(-90deg);
 }
 .hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowRight {
   position: relative;
 }
-.hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowRight svg {
-  position: relative;
-  z-index: 5;
-  transform: rotate(180deg);
-}
 .hero .hero-wrap .hero-rightside .hero-slider-arrows #heroArrowRight:before {
   content: url("/img/half-circle.png");
   position: absolute;
   z-index: 1;
-  top: 15px;
-  left: 8px;
+  top: 18px;
+  left: 10px;
   margin: 0 auto;
   transform: rotate(90deg);
 }
 .hero .hero-wrap .hero-rightside .hero-slider-circle-big {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 0.5px solid #fff;
   border-radius: 50%;
   width: 110%;
   height: 110%;
-  transform: scale(1.15);
   z-index: 1;
 }
 .hero .hero-wrap .hero-rightside .hero-slider-circle-small {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: 0 auto;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
   border: 1px solid #fff;
   border-radius: 50%;
-  width: 110%;
-  height: 110%;
-  transform: scale(1.1);
+  width: 104%;
+  height: 104%;
   z-index: 1;
 }
 
@@ -380,7 +364,7 @@ header .header-wrap-right-side .header-btn-order a:hover {
 }
 .polygraphy-in-kiev .col-md-5 h2 {
   color: #36373b;
-  font-size: 35px;
+  font-size: 36px;
 }
 .polygraphy-in-kiev .col-md-5 span {
   color: #014b94;
