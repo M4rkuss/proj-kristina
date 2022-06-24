@@ -59,12 +59,20 @@ $(document).ready (() => {
     nextArrow: '#heroArrowRight',
   })
 
+  $('.portfolio-slider-2').slick({
+    arrows: false,
+    dots: false,
+    accessibility: false,
+    asNavFor: '.portfolio-slider'
+  })
+
   $('.portfolio-slider').slick({
     arrows: true,
     dots: false,
     accessibility: false,
     prevArrow: '#portfolioArrowLeft',
     nextArrow: '#portfolioArrowRight',
+    asNavFor: '.portfolio-slider-2',
     customPaging: function (slider, i) {
       console.log(slider);
       return  (i + 1) + '/' + slider.slideCount;
@@ -110,10 +118,15 @@ window.addEventListener('scroll', function() {
 
 document.getElementById('menu-burger').onclick = function () {
   document.getElementById('nav-menu').classList.add('opened')
+  document.body.style.overflow = 'hidden';
+  document.body.style.padding = '0';
+  document.document.getElementById('nav-menu').style.overflow = 'visible';
 }
 
 document.getElementById('close-burger-icon').onclick = function () {
   document.getElementById('nav-menu').classList.remove('opened')
+  document.body.style.overflow = 'visible';
+  document.body.style.padding = '8px';
 }
 
 // input mask
@@ -274,3 +287,10 @@ function initMap() {
 }
 
 window.initMap = initMap;
+
+
+const media1060 = window.matchMedia('(max-width: 1060px)')
+if (media1060.matches) {
+  document.getElementById('collapseTwo').classList.remove('show')
+  document.getElementById('accordBtn2').classList.add('collapsed')
+}
